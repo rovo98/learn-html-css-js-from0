@@ -13,7 +13,7 @@ description: notes
 - [扩展](https://github.com/rovo98/learn-html-from0/blob/master/notes/introduction/what-is-html.md#一些问题----go-back-to-top)
     - [为什么原始文本需要结构化?](https://github.com/rovo98/learn-html-from0/blob/master/notes/introduction/what-is-html.md#为什么原始文本需要被结构化)
     - [为什么浏览器要持有原始文本类型的信息?](https://github.com/rovo98/learn-html-from0/blob/master/notes/introduction/what-is-html.md#为什么浏览器要持有原始文本类型的信息)
-    - [网页内容的表示不是CSS定义的?](https://github.com/rovo98/learn-html-from0/blob/master/notes/introduction/what-is-html.md#网页内容的表示不是CSS定义的)
+    - [网页内容的表示不是CSS定义的?](https://github.com/rovo98/learn-html-from0/blob/master/notes/introduction/what-is-html.md#网页内容的表示不是css定义的)
 
 ## 引入
 
