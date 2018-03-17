@@ -1,0 +1,60 @@
+---
+author: rovo98
+description: notes
+---
+
+# 什么是HTML?
+
+## Table of Contents
+
+- [引入](https://github.rovo98/learn-html-from0/blob/master/notes/introduction/what-is-html.md#引入)
+- [HyperText Markup Language](https://github.rovo98/learn-html-from0/blob/master/notes/introduction/what-is-html.md#hypertext-markup-language)
+- [为什么学习HTML?](https://github.rovo98/learn-html-from0/blob/master/notes/introduction/what-is-html.md#为什么学习HTML-?)
+- [扩展](https://github.rovo98/learn-html-from0/blob/master/notes/introduction/what-is-html.md#扩展----go-back-to-top)
+    - [为什么原始文本要结构化?](https://github.rovo98/learn-html-from0/blob/master/notes/introduction/what-is-html.md#为什么原始文本要结构化-?)
+    - [为什么浏览器要持有原始文本类型的信息?](https://github.rovo98/learn-html-from0/blob/master/notes/introduction/what-is-html.md#为什么浏览器要持有原始文本类型的信息-?)
+    - [网页内容的表示不是CSS定义的?](https://github.rovo98/learn-html-from0/blob/master/notes/introduction/what-is-html.md#网页内容的表示不是CSS定义的-？)
+
+## 引入
+
+首先，我们了解一下，HTML能做些什么，HTML 会告诉浏览器如何定位和展示图片、文本、或者视频等内容。
+在任意一个网页上点击右键你就可以看到**HTML**。
+
+## HyperText Markup Language
+
+HTML 即超文本标记语言；而标记语言(markup language) 是定义原始文本(raw text)
+结构和表示的计算机语言。在HTML中，计算机可以解释包含在HTML元素(element)中的原始文本。
+超文本(HyperText)是在计算机或其他设备上显示的文本，它通过链接可以对其他文本进行访问，
+也被称为**超链接**(hyperlinks)。
+
+## 为什么学习HTML？
+
+学习HTML是创建网站的第一步，即便学习HTML的一些知识也使我们可以在通讯，博客或网站
+模板中注入代码片段。随着我们的继续学习，我们可以使用**CSS和Javascript**对HTML进行
+分层，创建酷炫的动态网站。学习HTML的重点在于如何在页面中添加和修改基本内容，
+如文本，图片和视频。
+
+## 一些问题 -- [go back to top](https://github.rovo98/learn-html-from0/blob/master/notes/introduction/what-is-html.md#什么是HTML-?)
+
+### 为什么原始文本需要被结构化?
+
+原始文本本身可能具有语法定义的结构，但这不是HTML中提到的结构类型。
+通过仔细标记页面的内容，开发人员可以创建一个信息层次结构，有以下的目的：
+
+- 使用户通过扫描网站来快速选出重要的信息；
+- 有助于视障用户使用特殊的软件来浏览内容；
+- 它可以使搜索引擎能在文字的海洋中挑选出重要的关键字。
+
+### 为什么浏览器要持有原始文本类型的信息?
+
+浏览器需要这些信息，这样它才可以在文本的更大范围内提供文本的含义。换句话说，浏览器不仅将
+该信息用于渲染，还可以用于创建其他程序（如屏幕阅读器）可以解释的一种结构。
+
+### 网页内容的表示不是CSS定义的?
+
+对的，现在，我们最好把HTML归类为描述性标记语言，它鼓励开发人员将注意力集中在信息的语义上而不是
+视觉外观上。但是，还有其他的标记语言并没有注重它们侧重处理的地方。实际上在CSS出现之前，HTML确实
+更具有表现力。
+
+
+
