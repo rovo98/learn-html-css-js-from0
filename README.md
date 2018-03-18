@@ -13,3 +13,4 @@ description: learning html from 0.
 
 - [1. 什么是HTML](https://github.com/rovo98/learn-html-from0/blob/master/notes/introduction/what-is-html.md)
 - [2. HTML解析](https://github.com/rovo98/learn-html-from0/blob/master/notes/introduction/html-anatomy.md)
+- [3. body元素](https://github.com/rovo98/learn-html-from0/blob/master/notes/introduction/the-body-elemt.md)
