@@ -18,3 +18,4 @@ description: learning html from 0.
 - [5. Headings-标题](https://github.com/rovo98/learn-html-from0/blob/master/notes/introduction/headings.md)
 - [6. div](https://github.com/rovo98/learn-html-from0/blob/master/notes/introduction/divs.md)
 - [7. Attributes - 属性](https://github.com/rovo98/learn-html-from0/blob/master/notes/introduction/attributes.md)
+- [8. Displaying-Text - 显示文本](https://github.com/rovo98/learn-html-form0/blob/master/notes/introduction/displaying_text.md)
