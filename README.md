@@ -16,3 +16,4 @@ description: learning html from 0.
 - [3. body元素](https://github.com/rovo98/learn-html-from0/blob/master/notes/introduction/the-body-elemt.md)
 - [4. HTML结构](https://github.com/rovo98/learn-html-from0/blob/master/notes/introduction/html-structure.md)
 - [5. Headings-标题](https://github.com/rovo98/learn-html-from0/blob/master/notes/introduction/headings.md)
+- [6. div](https://github.com/rovo98/learn-html-from0/blob/master/notes/introduction/divs.md)
