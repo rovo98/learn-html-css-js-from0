@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* CSS Document for practise_09 
+ * author : rovo98
+ *
+ * date: 2018.7.22 15:01
+ * */
+#content-wrapper {
+    text-align : center;   
+}
+#header-table {
+    margin : 0 auto;
+}
+
+#main-table {
+    margin : 10px auto;
+    width: 75%; 
+    background-color : #ccc;
+    border: 1px solid #ccc;
+}
+/*from others*/
+.tabtop13 {
+    margin-top: 13px;
+}
+.tabtop13 td {
+    background-color:#fff;
+    height:25px;
+    line-height:150%;
+}
+
+.btbg{background:#e9faff !important;}
+.btbg1{background:#f2fbfe !important;}
+.btbg2{background:#f3f3f3 !important;}
+.biaoti{
+    font-family : 微软雅黑;
+    font-size : 26px;
+    font-weight: bold;
+    border-bottom:1px dashed #ccc;
+    color: #255e95;
+}
+
+.titfont {
+    font-family: 微软雅黑;
+    font-size : 16px;
+    font-weight : bold;
+    color: #255e95;
+}

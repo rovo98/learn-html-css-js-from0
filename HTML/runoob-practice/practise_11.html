@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>html实例 11 | 网页布局</title>
+        <meta charset = "UTF-8">
+    <style type="text/css">
+        #container {
+            width : 100%;
+            margin : 0 auto;
+        }
+        #header {
+            background-color : #ffa500;
+            height : 10%;
+        }
+        #menu {
+            width : 100px;
+            float : left;
+            position: fixed;
+            height : 600px;
+            background-color : #ffd700;
+        }
+        #content {
+            height : 600px; 
+            width: 100%;
+            margin-left : 100px;
+            background-color : #eee;
+            float : left;
+        }
+        #footer {
+            clear : both;
+            text-align : center;
+            width : 100%;
+            height: 10%;
+            background-color : #ffa500;
+        }
+    </style>
+    </head>
+    <body>
+        <div id = "container">
+            <div id = "header">
+                <h1>主要的网页标题</h1>
+            </div>
+            <div id = "menu">
+                <b>菜单</b><br />
+                HTML<br />
+                CSS<br />
+                JavaScript
+            </div>
+            <div id = "content">
+                网页内容在这里
+            </div>
+            <div id = "footer">
+                版权 &copy; rovo98
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<!--
+author: rovo98
+date: 2018.7.23 8:46
+-->
+<html>
+    <head>
+        <title>html实例 13 | 使用脚本</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>我的第一段 JavaScript</h1>
+        <p id = "demo">
+            JavaScript 能改变 HTML 元素中的内容和样式。
+        </p>
+        <script type="text/javascript">
+           document.write("<h2>从脚本中创建的标题</h2>");
+            function f() {
+               x = document.getElementById("demo");
+               x.innerHTML = "Hello World!";
+               x.style.color = "#ff0000";
+            }
+        </script>
+        <noscript>该浏览器不支持Javascript脚本。</noscript>
+        <button type="button" onclick="f()">点击改变内容和样式</button>
+    </body>
+</html>
