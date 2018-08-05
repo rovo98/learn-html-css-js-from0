@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>html实例06 | 链接</title>
+        <meta charset = "UTF-8">
+        <style type = "text/css">
+            #content-wrapper {
+                text-align : center;
+                background-color : #ccc;
+            }
+            .section-2th {
+                background-color : #F0E68C;
+                margin-bottom : 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id = "content-wrapper">
+        <h1>html 中的链接</h1>
+
+        <p><a href = "http://www.baidu.com">链接</a>这是一个指向百度的超链接。</p>
+        <a href = "practise_05.html" target="_blank">实例05</a> 这是一个指向本网站页面的链接。
+        
+        <div class = "section-2th">
+            <h2>图片链接</h2>
+            <p>创建图片链接:
+            <a href="http://www.runoob.com/html/html-tutorial.html" target="_blank">
+                <img border="10" src="images/smiley.gif" alt="HTML 教程" width="32" height="32"></a></p>
+            <p>无边框的图片链接:
+            <a href="http://www.runoob.com/html/html-tutorial.html" target="_blank">
+                <img border="0" src="images/smiley.gif" alt="HTML 教程" width="32" height="32"></a></p>
+        </div>
+
+        <h2>在当前页面链接到指定位置</h2>
+        <p><a href="#C8">查看章节 8</a></p>
+
+        <h3>章节 1</h3>
+        <p>这边显示章节内容......</p>
+        
+        <h3>章节 2</h3>
+        <p>这边显示章节内容......</p>
+
+        <h3>章节 3</h3>
+        <p>这边显示章节内容......</p>
+
+        <h3>章节 4</h3>
+        <p>这边显示章节内容......</p>
+
+        <h3>章节 5</h3>
+        <p>这边显示章节内容......</p>
+
+        <h3>章节 6</h3>
+        <p>这边显示章节内容......</p>
+
+        <h3>章节 7</h3>
+        <p>这边显示章节内容......</p>
+
+        <h3><a id="C8">章节 8</a></h3>
+        <p>这边显示章节内容......</p>
+
+        <h3>章节 9</h3>
+        <p>这边显示章节内容......</p>
+
+        <div class="section-2th">
+            <h2>在指定名称或id的框架内打开页面</h2>
+            <p><a href="http://rovo98.coding.me" target="testFrame">显示框架内容</a></p>
+            <iframe id="testFrame" name="testFrame" frameborder = "0" width="800" height="320"><iframe>
+        </div>
+
+        </div>
+    </body>
+</html>
