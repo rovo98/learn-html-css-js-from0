@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>html实例 08 | 表格</title>
+        <meta charset = "UTF-8">
+    <style type="text/css">
+        #content-wrapper {
+            text-align : center;
+        }
+        .content {
+            background-color : #eee;   
+        }
+        table {
+            margin : 0 auto;
+            text-align : center;
+        }
+    </style>
+    </head>
+    <body>
+        <div id = "content-wrapper">
+        <h1>HTML中使用表格</h1>
+        <table border="1">
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+            </tr>
+            <tr>
+                <td>row 1, cell 1</td>
+                <td>row 1, cell 2</td>
+            </tr>
+            <tr>
+                <td>row 2, cell 1</td>
+                <td>row 2, cell 2</td>
+            </tr>
+        </table>
+
+        <h2>一、没有边框的表格</h2>
+        <table>
+            <tr>
+                <td>100</td>
+                <td>200</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <td>400</td>
+                <td>500</td>
+                <td>600</td>
+            </tr>
+        </table>
+        <h4>这个表格没有边框</h4>
+        <table border="0">
+            <tr>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+            </tr>
+            <tr>
+                <td>D</td>
+                <td>E</td>
+                <td>F</td>
+            </tr>
+        </table>
+
+        <div class = "content">
+            <h2>二、表格中的表头</h2>
+            <h4>水平标题:</h4>
+            <table border="1">
+                <tr>
+                    <th>Name</th>
+                    <th>Telephone</th>
+                    <th>Telephone</th>
+                </tr>
+                <tr>
+                    <td>Bill Gates</td>
+                    <td>555 77 854</td>
+                    <td>555 77 854</td>
+                </tr>
+            </table>
+            <h4>垂直标题:</h4>
+            <table border="1">
+                <tr>
+                    <th>First Name</th>
+                    <td>Bill Gates</td>
+                </tr>
+                <tr>
+                <tr>
+                    <th>Telephone</th>
+                    <td>555 77 854</td>
+                </tr>
+                    <th>Telephone</th>
+                    <td>555 77 854</td>
+                </tr>
+            </table>
+        </div>
+
+        <h2>三、带标题的表格</h2>
+        <table border="1">
+            <caption>Monthly savings</caption>
+            <tr>
+                <th>Month</th>
+                <th>Savings</th>
+            </tr>
+            <tr>
+                <td>January</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>February</td>
+                <td>$50</td>
+            </tr>
+        </table>
+        <div class="content">
+            <h2>四、跨行或跨列的表格单元格</h2>
+            <h4>单元格跨两格:</h4>
+            <table border="1">
+                <tr>
+                    <th>Name</th>
+                    <th colspan="2">Telephone</th>
+                </tr>
+                <tr>
+                    <td>Bill Gates</td>
+                    <td>555 77 854</td>
+                    <td>555 77 854</td>
+            </table>
+            <h4>单元格跨两列:</h4>
+            <table border="1">
+                <tr>
+                    <th>First Name</th>
+                    <td>Bill Gates</td>
+                </tr>
+                <tr>
+                <tr>
+                    <th rowspan="2">Telephone</th>
+                    <td>555 77 854</td>
+                </tr>
+                    <td>555 77 854</td>
+                </tr>
+            </table>
+        </div>
+        
+        <h2>五、表格内标签</h2>
+        <table border="1">
+            <tr>
+                <td>
+                    <p>这是一个段落</p>
+                    <p>这是另一个段落</p>
+                </td>
+                <td>这个单元格包含一个表格:
+                    <table border="1">
+                        <tr>
+                            <td>A</td>
+                            <td>B</td>
+                        </tr>
+                        <tr>
+                            <td>C</td>
+                            <td>D</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>这个单元格包含一个列表:
+                    <ul>
+                        <li>apples</li>
+                        <li>bananas</li>
+                        <li>pineapples</li>
+                    </ul>
+                </td>
+                <td>
+                    HElLO
+                </td>
+            </tr>
+        </table>
+
+        <div class="content">
+            <h2>六、单元格边距</h2>
+            <h4>没有单元格边距</h4>
+            <table border="1">
+                <tr>
+                    <td>First</td>
+                    <td>Row</td>
+                </tr>
+                <tr>
+                    <td>Second</td>
+                    <td>Row</td>
+                </tr>
+            </table>
+            <h4>有单元格边距</h4>
+            <table border="1" cellpadding="10">
+                <tr>
+                    <td>First</td>
+                    <td>Row</td>
+                </tr>
+                <tr>
+                    <td>Second</td>
+                    <td>Row</td>
+                </tr>
+            </table>
+        </div>
+        
+        <h2>七、单元格间距</h2>
+        <h4>没有单元格间距</h4>
+        <table border="1">
+            <tr>
+                <td>First</td>
+                <td>Row</td>
+            </tr>
+            <tr>
+                <td>Second</td>
+                <td>Row</td>
+            </tr>
+        </table>
+        <h4>单元格间距 = “0”</h4>
+        <table border="1" cellspacing="0">
+            <tr>
+                <td>First</td>
+                <td>Row</td>
+            </tr>
+            <tr>
+                <td>Second</td>
+                <td>Row</td>
+            </tr>
+        </table>
+        <h4>单元格间距 = “10“</h4>
+        <table border="1" cellspacing="10">
+            <tr>
+                <td>First</td>
+                <td>Row</td>
+            </tr>
+            <tr>
+                <td>Second</td>
+                <td>Row</td>
+            </tr>
+        </table>
+        </div>
+    </body>
+</html>
