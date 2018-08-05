@@ -8,10 +8,10 @@ date: 2018.3.17
 
 ## Table of Contents
 
-- [引入](https://github.com/rovo98/learn-html-from0/blob/master/notes/introduction/what-is-html.md#引入)
-- [HyperText Markup Language](https://github.com/rovo98/learn-html-from0/blob/master/notes/introduction/what-is-html.md#hypertext-markup-language)
-- [为什么学习HTML?](https://github.com/rovo98/learn-html-from0/blob/master/notes/introduction/what-is-html.md#为什么学习html)
-- [扩展](https://github.com/rovo98/learn-html-from0/blob/master/notes/introduction/what-is-html.md#一些问题----go-back-to-top)
+- [引入](#引入)
+- [HyperText Markup Language](#hypertext-markup-language)
+- [为什么学习HTML?](#为什么学习html)
+- [扩展](#一些问题----go-back-to-top)
     - [为什么原始文本需要结构化?](https://github.com/rovo98/learn-html-from0/blob/master/notes/introduction/what-is-html.md#为什么原始文本需要被结构化)
     - [为什么浏览器要持有原始文本类型的信息?](https://github.com/rovo98/learn-html-from0/blob/master/notes/introduction/what-is-html.md#为什么浏览器要持有原始文本类型的信息)
     - [网页内容的表示不是CSS定义的?](https://github.com/rovo98/learn-html-from0/blob/master/notes/introduction/what-is-html.md#网页内容的表示不是css定义的)
@@ -35,7 +35,7 @@ HTML 即超文本标记语言；而标记语言(markup language) 是定义原始
 分层，创建酷炫的动态网站。学习HTML的重点在于如何在页面中添加和修改基本内容，
 如文本，图片和视频。
 
-## 一些问题 -- [go back to top](https://github.com/rovo98/learn-html-from0/blob/master/notes/introduction/what-is-html.md#什么是html)
+## 一些问题 -- [go back to top](#什么是html)
 
 ### 为什么原始文本需要被结构化?
 
