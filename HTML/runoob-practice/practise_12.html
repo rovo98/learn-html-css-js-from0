@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>html 实例12 | 表单</title>
+        <meta charset = "UTF-8">
+    <style type="text/css">
+        #content-wrapper {
+            background-color : #ccc;
+        }   
+        .content-1th {
+            background-color : #eee;
+            width : 70%;
+            margin : 10px auto;
+        }
+        .content-2th {
+            background-color : #ddd;
+            width : 70%;
+            margin : 10px auto;
+        }
+    </style>
+    </head>
+    <body>
+        <div id = "content-wrapper">
+            <h1 style="text-align:center;">HTML 中的表单</h1>
+            <div class="content-1th">
+                <h2>创建文本字段(Text Field)</h2>
+                <form action="">
+                    First name: <input type="text" name="firstname"><br>
+                    Last name: <input type="text" name="lastname">
+                </form>
+                <p><b>注意:</b>表单本身是不可见的，并且一个文本字段的默认宽度是20个字符。</p>
+            </div>
+            <div class="content-2th">
+                <h2>创建密码字段</h2>
+                <form action="">
+                    Username: <input type="text" name"user"><br>
+                    Password: <input type="password" name="password">
+                </form>
+                <p><b>注意:</b>密码字段中的字符是隐藏的(显示为星号或圆圈)。</p>
+            </div>
+            <div class="content-1th">
+                <h2>创建单选按钮 (Radio Buttons)</h2>
+                <form action="">
+                    <input type="radio" name="sex" value="male" checked="checked">Male<br>
+                    <input type="radio" name="sex" value="female">Female
+                </form>
+                <p><b>注意:</b>当用户点击一个单选按钮时，它就会被选中，其他的同名单选按钮不会被选中。</p>
+            </div>
+            <div class="content-2th">
+                <h2>创建复选框 (Checkboxes)</h2>
+                <form action = "">
+                    <input type="checkbox" name="vehicle" value="Bike">I have a bike.<br>
+                    <input type="checkbox" name="vehicle" value="Car" checked="checked">I have a car.
+                </form>
+            </div>
+            <div class="content-2th">
+                <h2>创建下拉框 (Select)</h2>
+                <form action="">
+                    <select name="cars">
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="fiat">Fiat</option>
+                        <option value="audi" selected>Audi</option>
+                    </select>
+                    <select name="hobbies">
+                        <optgroup label="Games">
+                            <option>cards</option>
+                            <option>computer games</option>
+                            <option>cell phone</option>
+                        </optgroup>
+                        <optgroup label="Sports">
+                            <option>football</option>
+                            <option>basketball</option>
+                            <option>table tenis</option>
+                        </optgroup>
+                    </select>
+                </form>
+            </div>
+            <div class="content-1th">
+                <h2>创建文本域</h2>
+                <form action="">
+                    <textarea rows="10" cols="30">我是一个文本框。
+                    </textarea>
+                </form>
+            </div>
+            <div class="content-2th">
+                <h2>带边框的表单</h2>
+                <form action="">
+                    <fieldset>
+                        <legend>Personal information:</legend>
+                        Name: <input type="text" size="30"><br>
+                        E-mail: <input type="text" size="30"><br>
+                        Date of birth: <input type="text" size="10">
+                    </fieldset>
+                </form>
+            </div>
+            <div class="content-1th">
+                <h2>创建一个提交表单</h2>
+                <h4>发送邮件到someone@example.com:</h4>
+                <form action="MAILTO:someone@example.com" method="post"
+                                                          enctype="text/plain">
+                    <input list="browers" name="browers">
+                    <datalist id="browers">
+                        <option>Internet Exploxer</option>
+                        <option>Firefox</option>
+                        <option>Chrome</option>
+                        <option>Opera</option>
+                        <option>Safari</option>
+                    </datalist> 这是一个data list<br><br>
+                    Name:<br>
+                    <input type="text" name="name" value="your name"><br>
+                    E-mail:<br>
+                    <input type="text" name="mail" value="your email"><br>
+                    Comment:<br>
+                    <input type="text" name="comment" value="your comment" size="50"><br><br>
+                    <input type="submit" value="发送">
+                    <input type="reset" value="重置">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
