@@ -1,0 +1,172 @@
+@charset "utf=8";
+/*
+ * author : rovo98
+ * date: 2018.8.6
+ * */
+div.wrap {
+    width : 820px;
+    height : 100%;
+    margin : 50px auto;
+	padding : 10px 40px;
+    border : 1px solid #ccc;
+    box-shadow : 0 5px 10px #666;
+    -webkit-box-shadow : 0 5px 20px #666;
+    -o-box-shadow : 0 5px 20px #666;
+    -moz-box-shadow : 0 5px 20px #666;
+    -ms-box-shadow : 0 5px 20px #666;
+} 
+.wrap h1 { text-align : center; }
+.wrap ul { 
+    width : 400px;
+    height : 100%;
+    margin : 10px auto;
+    list-style-type : decimal;
+    list-style-position : inside;
+}
+/*表格边框示例*/
+.border-table {
+    width : 300px;
+    height : 100%;
+    margin : 10px auto;
+}
+table.border-table,
+.border-table th,
+.border-table td { border : 1px solid blue; }
+/*Ends*/
+/*折叠边框示例*/
+.collapse-tbl {
+    width : 300px;
+    height : 100%;
+    margin : 10px auto;
+    border-collapse : collapse;
+}
+table.collapse-tbl,
+.collapse-tbl th,
+.collapse-tbl td { border : 1px solid #000; }
+/*Ends*/
+/*表格宽度和高度示例*/
+.wh-tbl {
+    width : 100%;
+    margin : 10px auto;
+}
+table.wh-tbl,
+.wh-tbl th, 
+.wh-tbl td { border : 1px solid #aaa; }
+.wh-tbl th { height : 50px; }
+/*Ends*/
+/*表格文本对齐示例*/
+.align-tbl {
+    width : 300px;
+    height : 100%;
+    margin : 10px auto;
+}
+table.align-tbl,
+.align-tbl th, 
+.align-tbl td { border : 1px solid #000; }
+.align-tbl td {
+    height : 50px;
+    text-align : right;
+    vertical-align : bottom;
+}
+/*Ends*/
+/*表格颜色示例*/
+.color-tbl {
+    width : 300px;
+    height : 100%;
+    margin : 10px auto;
+    border-collapse : collapse;
+}
+table.color-tbl, 
+.color-tbl th, 
+.color-tbl td { border : 1px solid green; }
+.color-tbl th {
+    font-weight : bold;
+    background-color : green;
+    color : #fff;
+}
+/*Ends*/
+.definition-tbl {
+    width : 500px;
+    height : 100%;
+    margin : 10px auto;
+    border-collapse : collapse;
+}
+table.definition-tbl,
+.definition-tbl td {
+    text-align : center;
+    border : 1px solid #ccc;
+}
+.definition-tbl th {
+    font-weight : bold;
+    color : #fff;
+    background-color : #323232;
+}
+/*表格单元格间隔距离示例*/
+.spacing-tbl1 {
+    width : 400px;
+    height : 100%;
+    margin : 10px auto;
+    border-collapse : separate;
+    border-spacing : 10px;
+}
+table.spacing-tbl1,
+.spacing-tbl1 th,
+.spacing-tbl1 td { border: 1px solid #000; }
+
+.spacing-tbl2 {
+    width : 400px;
+    height : 100%;
+    margin : 10px auto;
+    border-collapse : separate;
+    border-spacing : 10px 50px;
+}
+table.spacing-tbl2,
+.spacing-tbl2 th,
+.spacing-tbl2 td { border: 1px solid #000; }
+/*Ends*/
+/*表格标题位置*/
+.caption-side {
+    width : 300px;
+    height : 100%;
+    margin : 10px auto;
+    border-collapse : collapse;
+}
+.caption-side caption { caption-side : bottom; }
+table.caption-side,
+.caption-side th,
+.caption-side td { border : 1px solid #000; }
+/*Ends*/
+/*表格空白单元格显示规则*/
+.empty-cells-tbl {
+    width : 300px;
+    height : 100%;
+    margin : 10px auto;
+    border-collapse : separate;
+    empty-cells : hide;
+}
+table.empty-cells-tbl,
+.empty-cells-tbl th,
+.empty-cells-tbl td { border : 1px solid #000; } 
+/*Ends*/
+/*表格布局算法*/
+.table-layout-auto {
+    width : 300px;
+    height : 100%;
+    margin : 10px auto;
+    border-collapse : collapse;
+    table-layout : automatic;
+}
+table.table-layout-auto,
+.table-layout-auto th,
+.table-layout-auto td { border : 1px solid #000; }
+.table-layout-fixed {
+    width : 300px;
+    height : 100%;
+    margin : 10px auto;
+    border-collapse : collapse;
+    table-layout : fixed;
+}
+table.table-layout-fixed,
+.table-layout-fixed th,
+.table-layout-fixed td { border : 1px solid #000; }
+/*Ends*/
