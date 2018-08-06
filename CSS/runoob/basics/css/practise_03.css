@@ -1,0 +1,25 @@
+@charset "utf-8";
+/*
+ * author : rovo98
+ * Date: 2018.7.23 13:08
+ * */
+
+body {
+    background-color : tan;
+}
+h1 {color : maroon; font-size : 20pt;}
+hr {color : navy;}
+p {font-size:11pt; margin-left:15px;}
+
+a:link {
+    color : green;
+}
+a:visited {
+    color : yellow;
+}
+a:hover {
+    color : black;
+}
+a:active {
+    color : blue;
+}
