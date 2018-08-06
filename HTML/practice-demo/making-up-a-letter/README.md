@@ -15,4 +15,4 @@ date: 2018.8.6
 
 ### 页面运行结果
 
-![](demo.result.png)
+![](demo-result.png)
