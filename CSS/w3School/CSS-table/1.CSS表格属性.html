@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<!--
+    author : rovo98
+    date: 2018.8.6
+-->
+<html lang="en">
+    <head>
+        <title>CSS 表格属性</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles_01.css">
+    </head>
+    <body>
+        <div class="wrap">
+            <h1>CSS 表格属性</h1>
+            <ul>
+                <li>表格边框 : border</li>
+                <li>折叠边框 : border-collapse</li>
+                <li>表格宽度和高度: width / height</li>
+                <li>表格文本对齐 : text-align / vertical-align</li>
+                <li>表格内边距 : padding</li>
+                <li>表格颜色: color / background-color</li>
+            </ul>
+
+            <div class="border">
+                <h2>示例一：表格边框</h2>
+                <p>table, th, td -&gt; border: 1px solid blue;</p>
+                <table class="border-table">
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                    </tr>
+                    <tr>
+                        <td>Bill</td>
+                        <td>Gates</td>
+                    </tr>
+                    <tr>
+                        <td>Steven</td>
+                        <td>Jobs</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="collapse">
+                <h2>示例二：折叠边框</h2>
+                <p>table -&gt; border-collapse: collapse;<br>
+                table, th, td -&gt; border: 1px solid black;</p>
+                <table class="collapse-tbl">
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                    </tr>
+                    <tr>
+                        <td>Bill</td>
+                        <td>Gates</td>
+                    </tr>
+                    <tr>
+                        <td>Steven</td>
+                        <td>Jobs</td>
+                    </tr>
+                </table>
+                <p><b>注释:</b>如果没有规定!DOCTYPE, border-collapse可能引起意想不到的错误。</p>
+            </div>
+            <div class="wh">
+                <h2>示例三：表格的宽度和高度</h2>
+                <p>table -&gt; width: 100%;<br>
+                table, th, td -&gt; border : 1px solid #aaa;<br>
+                th -&gt; height : 50px;</p>
+                <table class="wh-tbl">
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                    </tr>
+                    <tr>
+                        <td>Bill</td>
+                        <td>Gates</td>
+                    </tr>
+                    <tr>
+                        <td>Steven</td>
+                        <td>Jobs</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="align">
+                <h2>示例四：表格文本对齐</h2>
+                <p>table, th, td -&gt; border: 1px solid black;<br>
+                td -&gt; text-align: right; vertical-align: bottom; height: 50px;</p>
+                <table class="align-tbl">
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                    </tr>
+                    <tr>
+                        <td>Bill</td>
+                        <td>Gates</td>
+                    </tr>
+                    <tr>
+                        <td>Steven</td>
+                        <td>Jobs</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="color">
+                <h2>示例五：表格颜色</h2>
+                <p>table, th, td -&gt; border: 1px solid green;<br>
+                table -&gt; border-collapse:collapse;<br>
+                th -&gt; background-color : green; font-weigth: bold; color: #fff;</p>
+                <table class="color-tbl">
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                    </tr>
+                    <tr>
+                        <td>Bill</td>
+                        <td>Gates</td>
+                    </tr>
+                    <tr>
+                        <td>Steven</td>
+                        <td>Jobs</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="border-spacing">
+                <h2>设置表格框之间的空白</h2>
+                <p><b>border-spacing</b>属性设置相邻单元格之间的距离(仅适用于“边框分离”模式)</p>
+                <h3>说明</h3>
+                <p>该属性指定分隔边框模型中的单元格边界之间的距离。在指定的两个长度值中，第一个是水平间隔，第二个是垂直间隔。<b>border-collapse</b>必须设置为separate才有效。</p>
+                <table class="definition-tbl">
+                    <tr>
+                        <th>默认值:</th>
+                        <td>not specified</td>
+                    </tr>
+                    <tr>
+                        <th>继承性:</th>
+                        <td>yes</td>
+                    </tr>
+                    <tr>
+                        <th>版本:</th>
+                        <td>CSS2</td>
+                    </tr>
+                    <tr>
+                        <th>JavaScript语法:</th>
+                        <td>object.style.borderSpacing="15px"</td>
+                    </tr>
+                </table>
+                <h3>可能的值</h3>
+                <table class="definition-tbl">
+                    <tr>
+                        <th>值</th>
+                        <th>描述</th>
+                    </tr>
+                    <tr>
+                        <td>length length</td>
+                        <td>规定相邻单元格的边框之间的距离。使用px, cm等单位。不允许使用负值。<br>
+                            如果定义一个length参数，那么定义的是水平和垂直间距。<br>
+                        如果定义两个length参数，则第一个是水平间距，第二个是垂直间距。</td>
+                    </tr>
+                    <tr>
+                        <td>inherit</td>
+                        <td>规定应该从父元素继承 border-spacing 属性值。</td>
+                    </tr>
+                </table>
+                <h3>实例</h3>
+                <table class="spacing-tbl1">
+                    <tr>
+                        <td>Adams</td>
+                        <td>John</td>
+                    </tr>
+                    <tr>
+                        <td>Bush</td>
+                        <td>George</td>
+                    </tr>
+                </table>
+                <table class="spacing-tbl2">
+                    <tr>
+                        <td>Carter</td>
+                        <td>Thomas</td>
+                    </tr>
+                    <tr>
+                        <td>Gates</td>
+                        <td>Bill</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="cap-position">
+                <h2>设置表格标题位置</h2>
+                <p><b>caption-side</b>属性设置表格标题的位置。</p>
+                <h3>说明</h3>
+                <p>该属性指定了表标题相对于表框的放置位置。表标题显示为好像它是在表之前(之后)的一个块级元素。</p>
+                <table class="definition-tbl">
+                    <tr>
+                        <th>默认值:</th>
+                        <td>top</td>
+                    </tr>
+                    <tr>
+                        <th>继承性:</th>
+                        <td>yes</td>
+                    </tr>
+                    <tr>
+                        <th>版本:</th>
+                        <td>CSS2</td>
+                    </tr>
+                    <tr>
+                        <th>JavaScript语法:</th>
+                        <td>object.style.captionSide="bottom"</td>
+                    </tr>
+                </table>
+                <h3>可能的值</h3>
+                <table class="definition-tbl">
+                    <tr>
+                        <th>值</th>
+                        <th>描述</th>
+                    </tr>
+                    <tr>
+                        <td>top</td>
+                        <td>默认值。把表格标题定位在表格之上。</td>
+                    </tr>
+                    <tr>
+                        <td>bottom</td>
+                        <td>把表格标题定位在表格之下。</td>
+                    </tr>
+                    <tr>
+                        <td>inherit</td>
+                        <td>规定应该从父元素继承 caption-side 属性的值。</td>
+                    </tr>
+                </table>
+                <h3>实例</h3>
+                <p>将表格标题放置在表格的下面</p>
+                <table class="caption-side">
+                    <caption>This is a caption</caption>
+                    <tr>
+                        <td>Adams</td>
+                        <td>John</td>
+                    </tr>
+                    <tr>
+                        <td>Bush</td>
+                        <td>George</td>
+                    </tr>
+                </table>
+                <p><b>注释:</b>如果规定!DOCTYPE, 那么IE 8(以及更高级版本)支持caption-side属性。</p>
+            </div>
+
+            <div class="empty-cells">
+                <h2>隐藏表格空白单元格</h2>
+                <h3>定义和用法</h3>
+                <p><b>empty-cells</b>属性设置是否显示表格中的空白单元格(仅适用于“separate”模式)。</p>
+                <h3>说明</h3>
+                <p>该属性定义了不包含任何内容的表格单元格如何显示。在border-collapse 为 separate 时才有效。</p>
+                <table class="definition-tbl">
+                    <tr>
+                        <th>默认值:</th>
+                        <td>show</td>
+                    </tr>
+                    <tr>
+                        <th>继承性:</th>
+                        <td>yes</td>
+                    </tr>
+                    <tr>
+                        <th>版本:</th>
+                        <td>CSS2</td>
+                    </tr>
+                    <tr>
+                        <th>JavaScript语法:</th>
+                        <td>object.style.emptyCells="hide"</td>
+                    </tr>
+                </table>
+                <h3>可能的值</h3>
+                <table class="definition-tbl">
+                    <tr>
+                        <th>值</th>
+                        <th>描述</th>
+                    </tr>
+                    <tr>
+                        <td>hide</td>
+                        <td>不在空单元格周围绘制边框。</td>
+                    </tr>
+                    <tr>
+                        <td>show</td>
+                        <td>在空单元格周围绘制边框。默认。</td>
+                    </tr>
+                    <tr>
+                        <td>inherit</td>
+                        <td>规定应该从父元素继承 empty-cells 属性的值。</td>
+                    </tr>
+                </table>
+                <h3>实例</h3>
+                <table class="empty-cells-tbl">
+                    <tr>
+                        <td>Adams</td>
+                        <td>John</td>
+                    </tr>
+                    <tr>
+                        <td>Bush</td>
+                        <td></td>
+                    </tr>
+                </table>
+                <p><b>注释:</b>如果规定!DOCTYPE, 那么IE 8(以及更高级版本)支持 empty-cells 属性。</p>
+            </div>
+
+            <div class="tbl-layout">
+                <h2>显示表格单元格、行、列的算法规则</h2> 
+                <h3>定义和用法</h3>
+                <p><b>tablelayout</b>属性用来显示表格单元格、行、列的算法规则。</p>
+                <h3>固定表格布局</h3>
+                <p>固定表格布局与自动表格布局相比，允许浏览器更快的对表格进行布局。<br><br>
+                在固定表格布局中，水平布局仅取决于表格宽度、列宽度、表格边框宽度、单元格间距，而与单元格中的内容无关。<br><br>
+                通过使用固定表格布局，客户端在接受第一行后就可以显示表格。</p>
+                <h3>自动表格布局</h3>
+                <p>在自动表格布局中，列的宽度是由列单元格中的没有折行的最宽的内容设定的。<br><br>
+                此算法有时会比较慢，这是由于它需要在确定最终布局之前访问表格中的所有内容。</p>
+                <h3>说明</h3>
+                <p>该属性指定了完成表格布局时所用的布局算法。固定表格布局比较快，但是不太灵活，而自动算法比较慢，不过更能反映传统的HTML表格。</p>
+                <table class="definition-tbl">
+                    <tr>
+                        <th>默认值:</th>
+                        <td>auto</td>
+                    </tr>
+                    <tr>
+                        <th>继承性:</th>
+                        <td>yes</td>
+                    </tr>
+                    <tr>
+                        <th>版本:</th>
+                        <td>CSS2</td>
+                    </tr>
+                    <tr>
+                        <th>JavaScript语法:</th>
+                        <td>object.style.tableLayout="fixed"</td>
+                    </tr>
+                </table>
+                <h3>可能的值</h3>
+                <table class="definition-tbl">
+                    <tr>
+                        <th>值</th>
+                        <th>描述</th>
+                    </tr>
+                    <tr>
+                        <td>automatic</td>
+                        <td>默认。列宽度有单元格内容设定。</td>
+                    </tr>
+                    <tr>
+                        <td>fixed</td>
+                        <td>列宽度由表格宽度和列宽度设定。</td>
+                    </tr>
+                    <tr>
+                        <td>inherit</td>
+                        <td>规定应该从父元素继承 table-layout 属性的值。</td>
+                    </tr>
+                </table>
+                <h3>实例</h3>
+                <table class="table-layout-auto">
+                    <tr>
+                        <td width="20%">10000000000000000000000000000000</td>
+                        <td width="40%">10000000000</td>
+                        <td width="40%">100</td>
+                    </tr> 
+                </table>
+                <table class="table-layout-fixed">
+                    <tr>
+                        <td width="20%">10000000000000000000000000000000</td>
+                        <td width="40%">10000000000</td>
+                        <td width="40%">100</td>
+                    </tr> 
+                </table>
+            </div>
+    </body>
+</html>
