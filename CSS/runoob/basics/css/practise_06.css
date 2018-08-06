@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+/*
+ * author : rovo98
+ * date: 2018.7.24 16:19
+ * */
+
+/* style rules for div "intro"*/
+#intro h1, li {
+    text-align : center;
+    font-weight : bold;
+    list-style-type : none;
+}
+/* end of rules.*/
+
+/* style rules for div "link-0"*/
+#link-0 {
+    text-align : center;
+}
+a:link.link {
+   color : #ccc; 
+   text-decoration : none;
+   padding : 20px 30px;
+}
+a:visited.link {
+   text-decoration : line-through;
+   background-color : #d00;
+   color : #0f0;
+}
+a:hover.link {
+    color : #3498af;
+    background-color : #ccc;
+    text-decoration : underline; 
+    font-size : 24px;
+}
+a:active.link {
+   background-color : #1019ff;
+   color : #00f; 
+}
+a:link.block,a:visited.block {
+   display: block;
+   font-weight: bold;
+   margin: 10px auto;
+   color: #fff;
+   background-color : #98bf21;
+   width : 200px;
+   padding : 4px;
+   text-decoration : none;
+   text-align : center;
+}
+a:hover.block, a:active.block {
+    background-color : #7a991a;
+    margin : 10px auto;
+}
+/* end of rules.*/
