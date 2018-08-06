@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--
+author : rovo98
+date: 2018.7.23 17:31
+-->
+<html>
+    <head>
+        <title>CSS 实例 05 | 文本</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/practise_05.css">
+    </head>
+    <body>
+        <h1 style="text-align:center;">CSS 文本样式</h1>
+        <div id = "text-0">
+            <h1>text formatting</h1> 
+            <p>This text is styled with some of the text formatting properties. The heading uses the text-align, text-transform, and color properties. The paragraph is indented, aligned, and the space between characters is specified. The underline is removed form the <a href="#" target="_blank">&quot;尝试一下&quot;</a> link. </p>
+        </div>
+        <div id = "text-1">
+            <h2>文本颜色 : color</h2>
+            <h3>这是标题</h3>
+            <p class="red">这是一个普通的段落，本文是红色的。页面定义默认的文本颜色选择器。</p>
+            <p class="ex">这是一个类为"ex"的段落。这个文本的颜色是蓝色的。</p>
+        </div>
+        <div id = "text-2">
+            <h2>CSS 文本对齐 - text-align 实例</h2>
+            <p class="date">2018 年 6 月 14 号</p>
+            <p class="main">“当我年轻的时候，我梦想改变这个世界；当我成熟以后，我发现我不能够改变这个世界，我将目光缩短了些，决定只改变我的国家；当我进入暮年以后，我发现我不能够改变我们的国家，我的最后愿望仅仅是改变一下我的家庭，但是，这也不可能。当我现在躺在床上，行将就木时，我突然意识到：如果一开始我仅仅去改变我自己，然后，我可能改变我的家庭；在家人的帮助和鼓励下，我可能为国家做一些事情；然后，谁知道呢?我甚至可能改变这个世界。”</p>
+            <p><b>注意:</b>重置浏览器窗口大小查看 "justify" 是如何工作的。</p>
+        </div>
+        <div id = "text-3">
+            <h2>文本修饰 : text-decoration</h2>
+            <h3>This is heading 1</h3>
+            <h4>This is heading 2</h4>
+            <h5>This is heading 3</h5>
+        </div>
+        <div id = "text-4">
+            <h2>文本转换 : text-transform</h2>
+            <p class="uppercase">This is some text.</p>
+            <p class="lowercase">This is some text.</p>
+            <p class="capitalize">This is some text.</p>
+        </div>
+        <div id = "text-5">
+            <h2>文本缩进 : text-indent </h2>
+            <p>In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since. 'Whenever you feel like criticizing anyone,' he told me, 'just remember that all the people in this world haven't had the advantages that you've had.'</p>
+        </div>
+        <div id = "text-6">
+            <h2>指定字符间的空间 : letter-spacing</h2>
+            <h3>This is heading 1</h3>
+            <h4>This is heading 2</h4>
+
+            <h2>制定行与行之间的空间 : line-height</h2>
+            <p>这是一个标准行高的段落。<br>
+            这是一个标准行高的段落。<br>
+            大多数浏览器的默认行高约为100% 至 120%。</p>
+            <p class="small">
+            这是一个更小行高的段落。<br>
+            这是一个更小行高的段落。<br>
+            这是一个更小行高的段落。<br>
+            这是一个更小行高的段落。<br>
+            这是一个更小行高的段落。<br>
+            </p>
+            <p class="big">
+            这是一个更大行高的段落。<br>
+            这是一个更大行高的段落。<br>
+            这是一个更大行高的段落。<br>
+            这是一个更大行高的段落。<br>
+            </p>
+            
+            <h2>文本方向 : direction</h2>
+            <p>一些文本。默认书写方向。</p>
+            <p class="rtl">一些文本。从右到左的书写方向。</p>
+            
+            <h2>单词间的空间 : word-spacing</h2>
+            <p class="ws">This is some text. This is some text.</p>
+
+            <h2>禁用文字环绕 : white-space: nowrap</h2>
+            <p class="nowrap">
+            这是一些文本。这是一些文本。这是一些文本。这是一些文本。
+            这是一些文本。这是一些文本。这是一些文本。这是一些文本。
+            这是一些文本。这是一些文本。这是一些文本。这是一些文本。
+            这是一些文本。这是一些文本。这是一些文本。这是一些文本。
+            这是一些文本。这是一些文本。这是一些文本。这是一些文本。
+            </p>
+            <h2>垂直对齐图像: vertical-align : text-top | text-bottom | center</h2>
+            <p>一个<img src="images/logo.png" alt="w2school" width="270" height = "50"> 默认对齐的图像。</p>
+            <p>一个<img class="text-top" src="images/logo.png" alt="w2school" width="270" height = "50"> text-top 对齐的图像。</p>
+            <p>一个<img class="text-bottom" src="images/logo.png" alt="w2school" width="270" height = "50"> text-bottom 对齐的图像。</p>
+
+            <h2>文本阴影 : text-shadow</h2>
+            <h1 class="ts">Text-shadow 效果</h1>
+            <p><b>注意:</b>Internet Exploer 9 以及更早的浏览器不支持 text-shadow属性</p>
+        </div>
+    </body>
+</html>

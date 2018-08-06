@@ -1,0 +1,48 @@
+@charset "utf-8";
+/*
+ *  author: rovo98
+ *  date: 2018.7.23 13:21
+ * */
+
+#bg0 {background-color : #b0c4de;}
+#bg0 h1 {background-color : #6495ed;}
+#bg0 p {background-color : #e0ffff;}
+
+#bg1 {
+   /* background:#fff url('images/background_01.jpg') no-repeat right top; */
+    background-color : #fff;
+    background-image : url('../images/bg_gif.jpg');
+    background-repeat : no-repeat;
+    background-position : right top;
+    margin-right : 400px;
+    height : 400px;
+}
+
+#bg2 {
+    background: #fff url('../images/bg_gif.jpg') no-repeat;
+    background-attachment : fixed;
+}
+
+#bg3 {
+    text-align : center;
+}
+.repeat-1 {
+    background-image : url('../images/background_01.jpg');
+    width : 100%;
+    height : 400px;
+}
+.repeat-2 {
+    background-image : url('../images/background_01.jpg');
+    background-repeat : repeat-y;
+    height : 400px;
+}
+.repeat-3 {
+    background-image : url('../images/background_01.jpg');
+    background-repeat : repeat-x;
+    height : 400px;
+}
+.repeat-4 {
+    background-image : url('../images/background_01.jpg');
+    background-repeat : no-repeat;
+    height : 400px;
+}
