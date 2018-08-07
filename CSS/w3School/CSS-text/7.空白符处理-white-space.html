@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<!-- 
+    author: rovo98
+    date: 2018.8.4
+-->
+
+<html>
+    <head>
+        <title>CSS 文本|字间隔</title>
+        <meta charset="UTF-8">
+        <style type="text/css">
+            <!--
+            table.first-tb {
+                width : 600px;
+                height : 250px;
+                margin : 10px auto;
+                border-collapse: collapse;
+            }
+            table.first-tb th, td {
+                border : 1px solid #ccc;
+                padding: 5px;
+            }
+            .first-tb th {background-color : #ccee22;}
+            .center-content {
+                text-align : center;
+            }
+            p.normal { white-space : normal; }
+            p.pre { white-space : pre; }
+            p.nowrap { white-space : nowrap; }
+            p.pre-wrap { white-space : pre-wrap; }
+            p.pre-line { white-space : pre-line; }
+
+            table.second-tb {
+                width : 800px;
+                height : 300px;
+                margin : 10px auto;
+                border-collapse : collapse;
+            }
+            table.second-tb th td {
+                border : 1px solid #ccde00;
+            }
+            .second-tb th { 
+                background-color : #666; 
+                font-weight : bold;
+                color : #fff;
+            }
+            -->
+        </style>
+    </head>
+    <body>
+        <div class="center-content">
+        <h1>white-space 的用法</h1>
+        <p><b>white-space:</b>属性设置如何处理元素内的空白。</p>
+        <table class="first-tb">
+            <tr>
+                <th>值</th>
+                <th>描述</th>
+            </tr> 
+            <tr>
+                <td>normal</td>
+                <td>默认，空白会被浏览器忽略</td>
+            </tr> 
+            <tr>
+                <td>pre</td>
+                <td>空白会被浏览器保留。其行为方式类似HTML中的&lt;pre&gt;标签。</td>
+            </tr> 
+            <tr>
+                <td>nowrap</td>
+                <td>文本不会换行，文本会在同一行上继续，直到遇到&lt;br&gt;标签。</td>
+            </tr> 
+            <tr>
+                <td>pre-wrap</td>
+                <td>保留空白符序列，但是正常地进行换行。</td>
+            </tr> 
+            <tr>
+                <td>pre-line</td>
+                <td>合并空白符序列，但是保留换行符。</td>
+            </tr> 
+            <tr>
+                <td>inherit</td>
+                <td>规定应该从父元素继承white-space属性的值。</td>
+            </tr> 
+        </table>
+        </div>
+        <div class="center-content">
+            <h2>white-sapce : normal;</h2>
+            <p class="normall">This paragraph  has many 
+            
+             spaces         in it.</p>
+            <p>注释： 当white-space 属性值为 normal 时，会合并所有的空白符，并忽略换行符。</p>
+        </div>
+        <div class="center-content">
+            <h2>white-sapce : pre;</h2>
+            <p class="pre">This paragraph  has many 
+            
+             spaces         in it.</p>
+            <p>注释： 当white-space 属性值为 pre 时，不会忽略空白符，也不会忽略换行符。</p>
+        </div>
+        <div class="center-content">
+            <h2>white-sapce : nowrap;</h2>
+            <p class="nowrap">
+                This is some text.
+                This is some text.
+                This is some text.
+                This is some text.
+                This is some text.
+                This is some text.
+                This is some text.
+                This is some text.
+                This is some text.
+                This is some text.
+                This is some text.
+            </p>
+            <p>nowrap 防止文本换行。</p>
+        </div>
+        <div class="center-content">
+            <h2>white-sapce : pre-wrap;</h2>
+            <p class="pre-wrap">This        paragraph has   a great     many s p a c e s with its textual content, but their    preservation    will not prevent
+            line    wrapping or line breaking.</p>
+            <p>注释： 当white-space 属性值为 pre-wrap 时，浏览器不仅会保留空白符并保留换行符，还允许自动换行。</p>
+        </div>
+        <div class="center-content">
+            <h2>white-sapce : pre-line;</h2>
+            <p class="pre-line">This    paragraph has a great   many        s p a c e s with 
+            its textual content, but their     collapse    will not prevent line   wrapping or line breaking.</p>
+            <p>注释： 当white-space 属性值为 pre-line 时，浏览器会合并空白符， 但是保留换行符，还允许自动换行。</p>
+        </div>
+        <!-- This is a table for sumary the property white-space -->
+        <div class="center-content">
+            <h2>white-space 属性行为总结</h2>
+            <table class="second-tb">
+                <tr>
+                    <th>值</th>
+                    <th>空白符</th>
+                    <th>换行符</th>
+                    <th>自动换行</th>
+                </tr>
+                <tr>
+                    <td>pre-line</td>
+                    <td>合并</td>
+                    <td>保留</td>
+                    <td>允许</td>
+                </tr>
+                <tr>
+                    <td>normal</td>
+                    <td>合并</td>
+                    <td>忽略</td>
+                    <td>允许</td>
+                </tr>
+                <tr>
+                    <td>nowrap</td>
+                    <td>合并</td>
+                    <td>忽略</td>
+                    <td>不允许</td>
+                </tr>
+                <tr>
+                    <td>pre</td>
+                    <td>保留</td>
+                    <td>保留</td>
+                    <td>不允许</td>
+                </tr>
+                <tr>
+                    <td>pre-wrap</td>
+                    <td>保留</td>
+                    <td>保留</td>
+                    <td>允许</td>
+                </tr>
+            </table>
+        </div>
+        <!-- end of the sumary --> 
+    </body>
+</html>
+
