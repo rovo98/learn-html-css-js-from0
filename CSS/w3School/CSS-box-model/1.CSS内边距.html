@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!--
+    author : rovo98
+    date: 2018.8.7
+-->
+<html lang="en">
+    <head>
+        <title>CSS 内边距 | padding</title>
+        <meta charset = "utf-8">
+        <style>
+            <!--
+            * {
+                margin : 0px;
+                padding : 0px;
+            }
+            .wrap {
+                width : 700px;
+                height : 100%;
+                margin : 50px auto;
+                border : 2px solid #aaa;
+                padding : 20px 50px;
+                box-shadow : 0 5px 10px #666;
+                -webkit-box-shadow : 0 5px 10px #666;
+                -moz-box-shadow : 0 5px 10px #666;
+                -ms-box-shadow : 0 5px 10px #666;
+                -o-box-shadow : 0 5px 10px #666;
+            }
+            .wrap h1 { text-align : center; }
+            .definition-tbl {
+                width : 500px;
+                height : 100%;
+                margin : 10px auto;
+                border-collapse : collapse;
+                text-align : center;
+            }
+            table.definition-tbl,
+            .definition-tbl td {
+                border : 1px solid #ccc;    
+            }
+            .definition-tbl th {
+                font-weight : bold;
+                color : #fff;
+                background-color : #323232;
+            }
+            .test-tbl {
+                width : 400px;
+                height : 100%;
+                margin : 10px auto;
+                border-collapse : collapse;
+            }
+            .test-tbl td.test1 { padding : 1.5cm; }
+            .test-tbl td.test2 { padding : 0.5cm 2.5cm; }
+            table.test-tbl,
+            .test-tbl td { border : 1px solid #000; }
+            -->
+        </style>
+    </head>
+    <body>
+        <div class="wrap">
+            <h1>CSS 内边距 | padding 属性</h1>
+            <p>CSS padding 属性定义元素的内边距。padding 属性接受长度值或百分比值，但不允许使用负值。</p>
+            <h3>说明</h3>
+            <table class="definition-tbl">
+                <tr>
+                    <th>默认值:</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>继承性:</th>
+                    <td>no</td>
+                </tr>
+                <tr>
+                    <th>版本:</th>
+                    <td>CSS1</td>
+                </tr>
+                <tr>
+                    <th>JavaScript语法:</th>
+                    <td>object.style.paddin = "10px 5px"</td>
+                </tr>
+            </table>
+            <h3>可能的值</h3>
+            <table class="definition-tbl">
+                <tr>
+                    <th>值</th>
+                    <th>描述</th>
+                </tr>
+                <tr>
+                    <td>auto</td>
+                    <td>浏览器计算内边距</td>
+                </tr>
+                <tr>
+                    <td>length</td>
+                    <td>规定以具体单位计的内边距值，比如像素、厘米等。默认值是0px.</td>
+                </tr>
+                <tr>
+                    <td>%</td>
+                    <td>规定基于父元素的宽度的百分比的内边距。</td>
+                </tr>
+                <tr>
+                    <td>inherit</td>
+                    <td>规定从父元素继承内边距。</td>
+                </tr>
+            </table>
+            <h3>实例</h3>
+            <table class="test-tbl">
+                <tr>
+                    <td class="test1">这个单元格内边距的每个变拥有相等的值。</td>
+                </tr>
+                <tr>
+                    <td class="test2">这个表格单元的上和下内边距是 0.5cm, 左和右内边距是 2.5cm。</td>
+                </tr>
+            </table>
+        </div> 
+    </body>
+</html>
+
