@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!--
+    author: rovo98
+    date: 2018.8.5
+-->
+<html>
+    <head>
+        <title>CSS 字体 | 通用字体 </title>
+        <meta charset="UTF-8">
+        <style type="text/css">
+            <!-- 
+            #introduction {
+                width : 600px;
+                height : 400px;
+                margin : 10px auto;
+                padding : 5px;
+            }
+            #introduction ul {
+               width : 400px;
+               height : 100px;
+               margin : 0 auto;
+               padding : 3px;
+            } 
+            div.common {
+                width : 600px;
+                height : 200px;
+                margin : 50px auto;
+            }
+            .common h3,
+            .common p { font-family : sans-serif; }
+            div.specified {
+                width : 600px;
+                height : 200px;
+                margin : 10px auto;
+            }
+            .specified > h3, 
+            .specified > p { font-family : Georgia, serif; }
+            div.font-style {
+                width : 600px;
+                height : 300px;
+                margin : 20px auto;
+            }
+            .font-style > h3 { font-style : normal; }
+            .font-style > h4 { font-style : italic; }
+            .font-style > h5 { font-style : oblique; }
+            div.font-variant {
+                width : 600px;
+                height : 150px;
+                margin : 10px auto;
+            }
+            .font-variant > h3 { font-variant : normal; }
+            .font-variant > h4 { font-variant : small-caps; }
+            div.font-weight {
+                width : 600px;
+                height : 200px;
+                margin : 5px auto;
+            }
+            .font-weight > p.normal { font-weight : normal; }
+            .font-weight > p.thick { font-weight : bold; }
+            .font-weight > p.thicker { font-weight : 900; }
+            div.font-size {
+                width : 600px;
+                height : 150px;
+                margin : 10px auto;
+            }
+            .font-size > h3 { font-size : 3em; }
+            .font-size > h4 { font-size : 32px; }
+            -->
+        </style>
+    </head>
+    <body>
+        <div id="introduction">
+            <h1>CSS字体系列</h1>
+            <p>在CSS中，有两种不同类型的字体系列名称:</p>
+            <ul>
+                <li>通用字体系列 - 拥有相似外观的字体系统组合(比如:"Serif" 或 "Monospace")</li>
+                <li>特定字体系列 - 具体的字体系列(比如: "Times"或"Courier")</li>
+            </ul>
+            <p>除了各种特定的字体系列外，CSS定义了5种通用的字体系列:</p>
+            <ul>
+                <li>Serif字体</li>
+                <li>Sans-serif字体</li>
+                <li>Monospace字体</li>
+                <li>Cursive字体</li>
+                <li>Fantasy字体</li>
+            </ul>
+        </div>
+        <div class="common">
+            <h2>使用通用字体</h2>
+            <p>如果希望文档使用一种<b>sans-serif</b>字体，但是并不关心是哪种字体，以下是一个例子:</p>
+            <h3>This is a header 3</h3>
+            <p>This is a paragraph.</p>
+            <p>This is a paragraph.</p>
+            <p>这样用户代理就会从san-serif字体系列中选择一个字体(如Helvetica),并将其应用在元素上。</p>
+        </div>
+        
+        <div class="specified">
+            <h2>使用特定字体</h2>
+            <p>使用特定的字体<b>Georgia</b>, 如果用户没有安装, 则使用serif字体系列。</p>
+            <h3>This is a header 3</h3>
+            <p>This is a paragraph.</p>
+            <p>This is a paragraph.</p>
+        </div>
+        <div class="font-style">
+            <h2>字体风格</h2>
+            <p><b>font-style</b>属性最常用于规定斜体文本.<br>
+            该属性有三个值:</p>
+            <ul>
+                <li>normal - 文本正常显示</li>
+                <li>italic - 文本斜体显示</li>
+                <li>oblique - 文本倾斜显示</li>
+            </ul>
+            <h3>This is a header 3. normal</h3>
+            <h4>This is a header 4. italic</h4>
+            <h5>This is a header 5. oblique</h5>
+        </div>
+        <div class="font-variant">
+            <h2>字体变形 - font-variant: 设置小型大写字母</h2>
+            <h3>This is a paragraph. normal</h3>
+            <h4>This is a paragraph. small-caps</h4>
+        </div>
+        <div class="font-weight">
+            <h2>font-weight : 字体加粗</h2>
+            <p class="normal">This is a paragraph. normal</p>
+            <p class="thick">This is a paragraph. bold</p>
+            <p class="thicker">This is a paragraph. 900</p>
+        </div>
+        <div class="font-size">
+            <h2>字体大小 ： font-size 字体大小默认 16px = 1em</h2>
+            <h3>This is Header 3 48px = 3em</h3>
+            <h4>This is header 4 32px = 2em</h4>
+        </div>
+    </body>
+</html>
+
