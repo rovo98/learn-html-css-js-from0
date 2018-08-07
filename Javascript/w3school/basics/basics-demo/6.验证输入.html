@@ -30,9 +30,17 @@
         <script>
             <!--
             function myFunction() {
-                var x = document.getElementById("demo").value;
-                if ( x == "" || isNaN(x) ) {
-                    alert("Not Numeric");
+                try {
+                    var x = document.getElementById("demo").value;
+                    if (x == "") throw "值为空";
+                    if (isNaN(x)) throw "不是数字";
+                    if (x > 10) throw "值太大";
+                    if (x < 5)  throw "值太小";
+                } catch (err) {
+                    var y = document.getElementById("msg");
+                    y.innerHTML = "错误: " + err;
+                    y.style.color = "#d00";
+                    y.style.fontWeight = "1.2em";
                 }
             }
             -->
@@ -41,9 +49,10 @@
         
         <div id="wrap">
             <h1>我的第一段 JavaScript</h1>
-            <p>请输入数字。如果输入值不是数字，浏览器会弹出提示框。</p> 
+            <p>请输入数字 5 - 10: </p> 
             <input id = "demo" type="text">
             <button type="button" onclick="myFunction()">点击这里</button>
+            <p id="msg"></p>
         </div>
     </body>
 </html>
