@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<!--
+    author: rovo98
+    date: 2018.8.5
+-->
+<html>
+    <head>
+        <title>CSS 列表 | 列表类型 </title>
+        <meta charset="UTF-8">
+        <style type="text/css">
+            <!-- 
+            #content {
+                width : 80%;
+                height : 100%;
+                margin : 10px auto;
+            }
+            #content h1,
+            #example h2 { text-align : center; }
+            table.definition-table {
+                width : 600px;
+                height : 100%;
+                margin : 5px auto;
+                border-collapse : collapse;
+                border : 1px solid #ccc;
+            }
+            table.definition-table th,
+            table.definition-table td {
+                padding : 5px;
+                text-align : center;
+            }
+            table.definition-table th {
+                background-color : #323232;
+                font-weight : bold;
+                color : #fff;
+            }
+            table.definition-table td { border : 1px solid #ccc; }
+            /*列表类型示例*/
+            #example ul {
+                width : 200px;
+                height : 100%;
+                margin : 10px auto; 
+                padding : 3px;
+            }
+            ul.none { list-style-type : none; }
+            ul.disc { list-style-type : disc; }
+            ul.circle { list-style-type : circle; }
+            ul.square { list-style-type : square; }
+            ul.decimal { list-style-type : decimal; }
+            ul.decimal-leading-zero { list-style-type : decimal-leading-zero; }
+            ul.lower-roman { list-style-type : lower-roman; }
+            ul.upper-roman { list-style-type : upper-roman; }
+            ul.lower-alpha { list-style-type : lower-alpha; }
+            ul.upper-alpha { list-style-type : upper-alpha; }
+            ul.lower-greek { list-style-type : lower-greek; }
+            ul.upper-greek { list-style-type : upper-greek; }
+            ul.lower-latin { list-style-type : lower-latin; }
+            ul.upper-latin { list-style-type : upper-latin; }
+            ul.hebrew { list-style-type : hebrew; }
+            ul.armenian { list-style-type : armenian; }
+            ul.georgain { list-style-type : georgain; }
+            ul.cjk-ideographic { list-style-type : cjk-ideographic; }
+            ul.hiragana { list-style-type : hiragana; }
+            ul.katakana { list-style-type : katakana; }
+            ul.hiragana-iroha { list-style-type : hiragana-iroha; }
+            ul.katakana-iroha { list-style-type : katakana-iroha; }
+            -->
+        </style>
+    </head>
+    <body>
+        <div id="content">
+            <h1>CSS 列表 | 列表类型</h1>
+            <h2>定义和用法</h2>
+            <p><b>list-style-type</b>属性设置列表项标记的类型。</p>
+            <table class="definition-table">
+                <tr>
+                    <th>默认值:</th>
+                    <td>disc</td>
+                </tr> 
+                <tr>
+                    <th>继承性:</th>
+                    <td>yes</td>
+                </tr> 
+                <tr>
+                    <th>版本:</th>
+                    <td>CSS1</td>
+                </tr> 
+                <tr>
+                    <th>JavaScript语法:</th>
+                    <td>object.style.listStyleType="square"</td>
+                </tr> 
+            </table>
+            <h2>CSS2 的值:</h2>
+            <table class="definition-table">
+                <tr>
+                    <th>值</th>
+                    <th>描述</th>
+                </tr>
+                <tr>
+                    <td>none</td>
+                    <td>无标记</td>
+                </tr>
+                <tr>
+                    <td>disc</td>
+                    <td>默认。标记是实心圆。</td>
+                </tr>
+                <tr>
+                    <td>circle</td>
+                    <td>标记是空心圆。</td>
+                </tr>
+                <tr>
+                    <td>square</td>
+                    <td>标记是实心方块。</td>
+                </tr>
+                <tr>
+                    <td>decimal</td>
+                    <td>标记是数字。</td>
+                </tr>
+                <tr>
+                    <td>decimal-leading-zero</td>
+                    <td>0开头的数字标记。(01, 02, 03,等)</td>
+                </tr>
+                <tr>
+                    <td>lower-roman</td>
+                    <td>小写罗马数字。</td>
+                </tr>
+                <tr>
+                    <td>upper-roman</td>
+                    <td>大写罗曼数字。</td>
+                </tr>
+                <tr>
+                    <td>lower-alpha</td>
+                    <td>小写英文字母。</td>
+                </tr>
+                <tr>
+                    <td>upper-alpha</td>
+                    <td>大写英文字母。</td>
+                </tr>
+                <tr>
+                    <td>lower-greek</td>
+                    <td>小写希腊字母。</td>
+                </tr>
+                <tr>
+                    <td>upper-greek</td>
+                    <td>大写希腊字母。</td>
+                </tr>
+                <tr>
+                    <td>lower-latin</td>
+                    <td>小写拉丁字母。</td>
+                </tr>
+                <tr>
+                    <td>upper-latin</td>
+                    <td>大写拉丁字母。</td>
+                </tr>
+                <tr>
+                    <td>hebrew</td>
+                    <td>传统的希伯来编号方式。</td>
+                </tr>
+                <tr>
+                    <td>armenian</td>
+                    <td>传统的亚美尼亚编号方式。</td>
+                </tr>
+                <tr>
+                    <td>georgian</td>
+                    <td>传统的乔治亚编号方式。</td>
+                </tr>
+                <tr>
+                    <td>cjk-ideographic</td>
+                    <td>简单的表意数字。</td>
+                </tr>
+                <tr>
+                    <td>hiragana</td>
+                    <td>标记是: a, i, u, e, ka, ki 等(日文片假名)</td>
+                </tr>
+                <tr>
+                    <td>katakana</td>
+                    <td>标记是: A, I, U, E, KA, KI 等(日文片假名)</td>
+                </tr>
+                <tr>
+                    <td>hiragana-iroha</td>
+                    <td>标记是: i, ro, ha, ni, ho, he, to等(日文片假名)</td>
+                </tr>
+                <tr>
+                    <td>katakana-iroha</td>
+                    <td>标记是: I, RO, HA, NI, HO, HE, TO 等(日文片假名)</td>
+                </tr>
+            </table>
+
+            <div id = "example">
+                <h2>所有列表项类型示例如下</h2>
+                <ul class="none">
+                    <li>none 类型</li>
+                    <li>茶</li>
+                    <li>可口可乐</li>
+                </ul>
+                <ul class="disc">
+                    <li>disc 类型</li>
+                    <li>茶</li>
+                    <li>可口可乐</li>
+                </ul>
+                <ul class="circle">
+                    <li>circle 类型</li>
+                    <li>茶</li>
+                    <li>可口可乐</li>
+                </ul>
+                <ul class="square">
+                    <li>square 类型</li>
+                    <li>茶</li>
+                    <li>可口可乐</li>
+                </ul>
+                <ul class="decimal">
+                    <li>decimal 类型</li>
+                    <li>茶</li>
+                    <li>可口可乐</li>
+                </ul>
+                <ul class="decimal-leading-zero">
+                    <li>decimal-leading-zero 类型</li>
+                    <li>茶</li>
+                    <li>可口可乐</li>
+                </ul>
+                <ul class="lower-roman">
+                    <li>lower-roman 类型</li>
+                    <li>茶</li>
+                    <li>可口可乐</li>
+                </ul>
+                <ul class="upper-roman">
+                    <li>upper-roman 类型</li>
+                    <li>茶</li>
+                    <li>可口可乐</li>
+                </ul>
+                <ul class="lower-alpha">
+                    <li>lower-alpha 类型</li>
+                    <li>茶</li>
+                    <li>可口可乐</li>
+                </ul>
+                <ul class="upper-alpha">
+                    <li>upper-alpha 类型</li>
+                    <li>茶</li>
+                    <li>可口可乐</li>
+                </ul>
+                <ul class="lower-greek">
+                    <li>lower-greek 类型</li>
+                    <li>茶</li>
+                    <li>可口可乐</li>
+                </ul>
+                <ul class="upper-greek">
+                    <li>upper-greek 类型</li>
+                    <li>茶</li>
+                    <li>可口可乐</li>
+                </ul>
+                <ul class="lower-latin">
+                    <li>lower-latin 类型</li>
+                    <li>茶</li>
+                    <li>可口可乐</li>
+                </ul>
+                <ul class="upper-latin">
+                    <li>upper-latin 类型</li>
+                    <li>茶</li>
+                    <li>可口可乐</li>
+                </ul>
+                <ul class="hebrew">
+                    <li>hebrew 类型</li>
+                    <li>茶</li>
+                    <li>可口可乐</li>
+                </ul>
+                <ul class="armenian">
+                    <li>armenian 类型</li>
+                    <li>茶</li>
+                    <li>可口可乐</li>
+                </ul>
+                <ul class="georgian">
+                    <li>georgian 类型</li>
+                    <li>茶</li>
+                    <li>可口可乐</li>
+                </ul>
+                <ul class="cjk-ideographic">
+                    <li>cjk-ideographic 类型</li>
+                    <li>茶</li>
+                    <li>可口可乐</li>
+                </ul>
+                <ul class="hiragana">
+                    <li>hiragana 类型</li>
+                    <li>茶</li>
+                    <li>可口可乐</li>
+                </ul>
+                <ul class="katakana">
+                    <li>katakana 类型</li>
+                    <li>茶</li>
+                    <li>可口可乐</li>
+                </ul>
+                <ul class="hiragana-iroha">
+                    <li>hiragana-iroha 类型</li>
+                    <li>茶</li>
+                    <li>可口可乐</li>
+                </ul>
+                <ul class="katakana-iroha">
+                    <li>katakana-iroha 类型</li>
+                    <li>茶</li>
+                    <li>可口可乐</li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
+
