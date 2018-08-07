@@ -1,0 +1,104 @@
+@charset "utf-8";
+/*
+ * author : rovo98
+ *
+ * date: 2018.8.7
+ * */
+
+* {
+    margin : 0px;
+    padding : 0px;
+}
+
+.wrap {
+    width : 700px;
+    height : 100%;
+    margin : 50px auto;
+    border : 2px solid #aaa;
+    padding : 20px 50px;
+    box-shadow : 0 5px 10px #666;
+    -webkit-box-shadow : 0 5px 10px #666;
+    -moz-box-shadow : 0 5px 10px #666;
+    -ms-box-shadow : 0 5px 10px #666;
+    -o-box-shadow : 0 5px 10px #666;
+}
+.wrap h1 { 
+    text-align : center;
+    margin : 30px auto;
+}
+.wrap h2 { margin : 20px auto; }
+.wrap h3 { margin : 10px auto; }
+
+.definition-tbl {
+    width : 500px;
+    height : 100%;
+    margin : 10px auto;
+    border-collapse : collapse;
+    text-align : center;
+}
+table.definition-tbl,
+.definition-tbl td { border : 1px solid #ccc; }
+.definition-tbl th {
+    font-weight : bold;
+    color : #fff;
+    background-color : #323232;
+}
+.definition-tbl td { padding : 5px 10px; }
+
+.test { margin-top : 30px; }
+.test p { margin : 30px auto; }
+.dotted { border-style : dotted; }
+.dashed { border-style : dashed; }
+.solid { border-style : solid; }
+.double { border-style : double; }
+.groove { border-style : groove; }
+.ridge { border-style : ridge; }
+.inset { border-style : inset; }
+.outset { border-style : outset; }
+.soliddouble { border-style : solid double; }
+.doublesolid { border-style : double solid; }
+.groovedouble { border-style : groove double; }
+.threestyles { border-style : solid double groove; }
+
+/*边框宽度实例*/
+.border-width-test p { margin : 20px auto;}
+.border-width-test p.one {
+    border-style : solid;
+    border-width : 5px;
+}
+.border-width-test p.two {
+    border-style : solid;
+    border-width : thick;
+}
+.border-width-test p.three {
+    border-style : solid;
+    border-width : 5px 10px;
+}
+.border-width-test p.four {
+    border-style : solid;
+    border-width : 5px 10px 10px;
+}
+.border-width-test p.five {
+    border-style : solid;
+    border-width : 5px 10px 1px medium;
+}
+/*Ends*/
+/*边框颜色实例*/
+.border-color-test p { margin : 15px auto; }
+.border-color-test p.one {
+   border-style : solid;
+   border-color : #00f;
+}
+.border-color-test p.two {
+   border-style : solid;
+   border-color : #f00 #00f;
+}
+.border-color-test p.three {
+   border-style : solid;
+   border-color : #f00 #0f0 #00f;
+}
+.border-color-test p.four {
+   border-style : solid;
+   border-color : #f00 #0f0 #00f rgb(255, 0, 255);
+}
+/*Ends*/

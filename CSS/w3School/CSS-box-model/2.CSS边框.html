@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<!--
+    author : rovo98
+    date: 2018.8.7
+-->
+<html lang="en">
+    <head>
+        <title>CSS 内边距 | padding</title>
+        <meta charset = "utf-8">
+        <link rel="stylesheet" href="styles_02.css">
+    </head>
+    <body>
+        <div class="wrap">
+            <h1>CSS 边框 | border</h1>
+            <p>元素的边框就是围绕元素内容和内边距的一条或多条线。<br><br>
+            每个边框有 3 个方面: 宽度、样式、以及颜色。</p>
+            <h2>边框样式: border-style</h2>
+            <h3>定义和用法</h3>
+            <p><b>border-style</b>属性用于设置元素的所有边框样式，或者单独为各边设置边框样式。</p>
+            <table class="definition-tbl">
+                <tr>
+                    <th>默认值:</th>
+                    <td>not-specified</td>
+                </tr>
+                <tr>
+                    <th>继承性:</th>
+                    <td>no</td>
+                </tr>
+                <tr>
+                    <th>版本:</th>
+                    <td>CSS1</td>
+                </tr>
+                <tr>
+                    <th>JavaScript语法:</th>
+                    <td>object.style.borderStyle = "dotted double"</td>
+                </tr>
+            </table>
+            <h3>可能的值</h3>
+            <table class="definition-tbl">
+                <tr>
+                    <th>值</th>
+                    <th>描述</th>
+                </tr>
+                <tr>
+                    <td>none</td>
+                    <td>定义无边框。</td>
+                </tr>
+                <tr>
+                    <td>hidden</td>
+                    <td>与“none”相同。不过应用于表时除外，对于表，hidden用于解决边框冲突。</td>
+                </tr>
+                <tr>
+                    <td>dotted</td>
+                    <td>定义点状边框。在大多数浏览器中呈现实线。</td>
+                </tr>
+                <tr>
+                    <td>dashed</td>
+                    <td>定义虚线。在大多数浏览器中呈现实线。</td>
+                </tr>
+                <tr>
+                    <td>solid</td>
+                    <td>定义实线。</td>
+                </tr>
+                <tr>
+                    <td>double</td>
+                    <td>定义双线。双线的宽度等于 border-width 的值。</td>
+                </tr>
+                <tr>
+                    <td>groove</td>
+                    <td>定义 3D 凹槽边框。其效果取决于 border-color 的值。</td>
+                </tr>
+                <tr>
+                    <td>ridge</td>
+                    <td>定义 3D 垄状边框。其效果取决于 border-color 的值。</td>
+                </tr>
+                <tr>
+                    <td>inset</td>
+                    <td>定义 3D inset边框。其效果取决于 border-color 的值。</td>
+                </tr>
+                <tr>
+                    <td>outset</td>
+                    <td>定义 3D outset边框。其效果取决于 border-color 的值。</td>
+                </tr>
+                <tr>
+                    <td>inherit</td>
+                    <td>规定应该从父元素继承边框属性值。</td>
+                </tr>
+            </table>
+            <h3>实例</h3>
+            <div class="test">
+                <p class="dotted"> A dotted border</p>
+                <p class="dashed"> A dashed border</p>
+                <p class="solid"> A solid border</p>
+                <p class="double"> A double border</p>
+                <p class="groove"> A groove border</p>
+                <p class="ridge"> A ridge border</p>
+                <p class="inset"> A inset border</p>
+                <p class="outset"> A outset border</p>
+                <p class="soliddouble">Some text</p>
+                <p class="doublesolid">Some text</p>
+                <p class="groovedouble">Some text</p>
+                <p class="threestyles">Some text</p>
+            </div>
+            <h2>边框宽度 : border-width</h2>
+            <h3>定义和用法</h3>
+            <p><b>border-width</b>简写属性为元素的所有边框设置宽度，或者单独的为各边边框设置宽度。</p>
+            <table class="definition-tbl">
+                <tr>
+                    <th>默认值:</th>
+                    <td>medium</td>
+                </tr>
+                <tr>
+                    <th>继承性:</th>
+                    <td>no</td>
+                </tr>
+                <tr>
+                    <th>版本:</th>
+                    <td>CSS1</td>
+                </tr>
+                <tr>
+                    <th>JavaScript语法:</th>
+                    <td>object.style.borderWidth = "thin thick"</td>
+                </tr>
+            </table>
+            <h3>可能的值</h3>
+            <table class="definition-tbl">
+                <tr>
+                    <th>值</th>
+                    <th>描述</th>
+                </tr>
+                <tr>
+                    <td>thin</td>
+                    <td>定义细的边框。</td>
+                </tr>
+                <tr>
+                    <td>medium</td>
+                    <td>默认。定义中等的边框。</td>
+                </tr>
+                <tr>
+                    <td>thick</td>
+                    <td>定义粗的边框。</td>
+                </tr>
+                <tr>
+                    <td>length</td>
+                    <td>允许自定义边框的宽度。</td>
+                </tr>
+                <tr>
+                    <td>inherit</td>
+                    <td>规定应该从父元素继承边框属性值。</td>
+                </tr>
+            </table>
+            <h3>实例</h3>
+            <div class="border-width-test">
+                <p class="one">Some text.</p>
+                <p class="two">Some text.</p>
+                <p class="three">Some text.</p>
+                <p class="four">Some text.</p>
+                <p class="five">Some text.</p>
+                <p><b>注释:</b>”border-width“ 属性如果单独使用的话是不会起作用的。必须首先使用 "border-style" 属性设置边框。</p>
+            </div>
+            <h2>边框颜色 : border-color</h2>
+            <h3>定义和用法</h3>
+            <p><b>border-color</b>属性设置四条边框的颜色。此属性可设置1到4种颜色。<br><br>
+            <b>border-color</b> 属性是一个简写属性，可设置一个元素的所有边框中可见部分的颜色。或者单独为四个边框设置不同的颜色。</p>
+            <table class="definition-tbl">
+                <tr>
+                    <th>默认值:</th>
+                    <td>not-specified</td>
+                </tr>
+                <tr>
+                    <th>继承性:</th>
+                    <td>no</td>
+                </tr>
+                <tr>
+                    <th>版本:</th>
+                    <td>CSS1</td>
+                </tr>
+                <tr>
+                    <th>JavaScript语法:</th>
+                    <td>object.style.borderColor = "#f00 blue"</td>
+                </tr>
+            </table>
+            <h3>可能的值</h3>
+            <table class="definition-tbl">
+                <tr>
+                    <th>值</th>
+                    <th>描述</th>
+                </tr>
+                <tr>
+                    <td>color_name</td>
+                    <td>规定颜色值为颜色名称的边框颜色(比如 red)。</td>
+                </tr>
+                <tr>
+                    <td>hex_number</td>
+                    <td>规定颜色值为十六进制的边框颜色(比如: #ff0)。</td>
+                </tr>
+                <tr>
+                    <td>rgb_number</td>
+                    <td>规定颜色值为 rgb 代码的边框颜色(比如 rgb(255, 0, 255))。</td>
+                </tr>
+                <tr>
+                    <td>transparent</td>
+                    <td>默认值。边框颜色透明。</td>
+                </tr>
+                <tr>
+                    <td>inherit</td>
+                    <td>规定应该从父元素继承边框颜色属性值。</td>
+                </tr>
+            </table>
+            <h3>实例</h3>
+            <div class="border-color-test">
+                <p class="one">One-colored border!</p>
+                <p class="two">Two-colored border!</p>
+                <p class="three">Three-colored border!</p>
+                <p class="four">Four-colored border!</p>
+                <p><b>注释:</b> "border-color" 属性如果单独设置不会起作用，必须先设置 "border-style" 属性。</p>
+            </div>
+        </div> 
+    </body>
+</html>
+
