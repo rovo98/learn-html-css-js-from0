@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--
+    author: rovo98
+    date: 2018.8.5
+-->
+<html>
+    <head>
+        <title>CSS 链接 | 设置链接样式  </title>
+        <meta charset="UTF-8">
+        <style type="text/css">
+            <!--
+            #change-link-style {
+                width : 600px;
+                height : 400px;
+                margin : 20px auto;
+            } 
+            /*改变链接颜色*/
+            a.one:link { color : #aaa; } 
+            a.one:visited { color : #12ff98; }
+            a.one:hover { color : #1fa; }
+            a.one:active { color : #0de; }
+
+            /*改变字体尺寸*/
+            a.two:link {
+                color : #aaa;
+                font-size : 1em;
+            }
+            a.two:visited { font-size : 1em; }
+            a.two:hover { font-size : 3em; }
+            a.two:active { color : #0de; }
+
+            /*改变背景颜色*/
+            a.three:link {
+                color : #aaa;
+                background-color : #12fe88;
+            }
+            a.three:visited {
+                color : #ccc;
+            }
+            a.three:hover { background-color : #dd1209; }
+            a.three:active {
+                color : #0de;
+            }
+            a.four:link { font-family: sans-serif; }
+            a.four:visited { color : #ccc; }
+            a.four:hover { font-family : Georgia, serif;}
+            a.active: {color : #0de; }
+
+            a.five:link {
+                text-decoration : none;
+                color : #aaa;
+            }
+            a.five:visited { 
+                color : #0ff; 
+                text-transform : capitalize;
+                text-decoration: line-through;
+            }
+            a.five:hover { text-decoration : underline; }
+            a.five:active { color : #0de; }
+            /*创建一个链接框*/
+            a.link-box:link,
+            a.link-box:visited{
+                display : block;
+                width : 120px;
+                padding : 5px;
+                font-weight : bold;
+                font-size : 14px;
+                font-family : Verdana, Arial, Helvetica, sans-serif;
+                text-align : center;
+                text-decoration : none;
+                color : #fff;
+                background-color : #98bf21;
+            }
+            a.link-box:hover,
+            a.link-box:active {
+            }
+            -->
+        </style>
+    </head>
+    <body>
+        <div id="change-link-style">
+        <h1>设置链接样式</h1>
+        <p>请把鼠标指针移动到下面的链接上，看看它们的变化.</p>
+        <p><a class="one" href="#">这个链接改变颜色。</a></p>
+        <p><a class="two" href="#">这个链接改变字体尺寸。</a></p>
+        <p><a class="three" href="#">这个链接改变背景颜色。</a></p>
+        <p><a class="four" href="#">这个链接改变字体。</a></p>
+        <p><a class="five" href="#">这个链接改变文本的装饰。</a></p>
+        <h2>下面是一个链接框</h2>
+        <p><a class="link-box" href="#">link-box</a></p>
+        </div>
+    </body>
+</html>
+
