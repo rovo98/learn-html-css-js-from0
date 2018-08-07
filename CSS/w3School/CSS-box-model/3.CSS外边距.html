@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--
+    author : rovo98
+    date: 2018.8.7
+-->
+<html lang="en">
+    <head>
+        <title>CSS 外边距 | margin</title>
+        <meta charset = "utf-8">
+        <link rel="stylesheet" href="styles_03.css">
+    </head>
+    <body>
+        <div class="wrap">
+            <h1>CSS 外边距 | margin</h1>
+            <h2>CSS margin 属性</h2>
+            <p>设置外边距的最简单方法就是使用 margin 属性。<br><br>
+            margin 接受任何长度单位，可以是像素、英寸、毫秒或em。
+            </p>
+            <h3>定义和语法</h3>
+            <p>margin 简写在一个声明中设置所有外边距属性。该属性可以有1 到 4 个值。</p>
+            <h3>说明</h3>
+            <p>这个简写属性设置所有外边距的宽度，或者设置各边的外边距宽度。<br><br>
+            块级元素的垂直相邻外边距会合并，而行内元素实际上不占上下外边距。行内元素的左右外边距不会合并。浮动元素外边距也不会合并。允许指定负的外边距值，不过使用时要小心。</p>
+            <table class="definition-tbl">
+                <tr>
+                    <th>默认值:</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>继承性:</th>
+                    <td>no</td>
+                </tr>
+                <tr>
+                    <th>版本:</th>
+                    <td>CSS1</td>
+                </tr>
+                <tr>
+                    <th>JavaScript语法:</th>
+                    <td>object.style.margin = "10px 5px"</td>
+                </tr>
+            </table>
+            <h3>可能的值</h3>
+            <table class="definition-tbl">
+                <tr>
+                    <th>值</th>
+                    <th>描述</th>
+                </tr>
+                <tr>
+                    <td>auto</td>
+                    <td>浏览器计算外边距。</td>
+                </tr>
+                <tr>
+                    <td>length</td>
+                    <td>规定以具体单位计的外边距值，比如像素、厘米等。默认是 0px。</td>
+                </tr>
+                <tr>
+                    <td>%</td>
+                    <td>规定基于父元素的宽度的百分比的外边距。</td>
+                </tr>
+                <tr>
+                    <td>inherit</td>
+                    <td>规定应该从父元素继承外边距。</td>
+                </tr>
+            </table>
+            <h3>实例</h3>
+            <div class="margin-test">
+                <p>这个段落没有设置外边距。</p>
+                <p class="margin">这个段落带有指定的外边距。这个段落带有指定的外边距。这个段落带有指定的外边距。这个段落带有指定的外边距。这个段落带有指定的外边距。这个段落带有指定的外边距。这个段落带有指定的外边距。这个段落带有指定的外边距。这个段落带有指定的外边距。这个段落带有指定的外边距。这个段落带有指定的外边距。</p>
+                <p>这个段落没有设置外边距。</p>
+            </div>
+        </div> 
+    </body>
+</html>
+

@@ -1,0 +1,49 @@
+@charset "utf-8";
+/*
+ * author : rovo98
+ *
+ * date: 2018.8.7
+ * */
+
+* {
+    margin : 0px;
+    padding : 0px;
+}
+
+.wrap {
+    width : 700px;
+    height : 100%;
+    margin : 50px auto;
+    border : 2px solid #aaa;
+    padding : 20px 50px;
+    box-shadow : 0 5px 10px #666;
+    -webkit-box-shadow : 0 5px 10px #666;
+    -moz-box-shadow : 0 5px 10px #666;
+    -ms-box-shadow : 0 5px 10px #666;
+    -o-box-shadow : 0 5px 10px #666;
+}
+.wrap h1 { 
+    text-align : center;
+    margin : 30px auto;
+}
+.wrap h2 { margin : 20px auto; }
+.wrap h3 { margin : 10px auto; }
+
+.definition-tbl {
+    width : 500px;
+    height : 100%;
+    margin : 10px auto;
+    border-collapse : collapse;
+    text-align : center;
+}
+table.definition-tbl,
+.definition-tbl td { border : 1px solid #ccc; }
+.definition-tbl th {
+    font-weight : bold;
+    color : #fff;
+    background-color : #323232;
+}
+.definition-tbl td { padding : 5px 10px; }
+
+.margin-test p { margin : 10px auto; }
+.margin-test p.margin { margin : 2cm 4cm 3cm 4cm; }
