@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+/*
+ * author: rovo98
+ * date: 2018.8.4
+ * */
+
+body {
+    background-image : url(../images/eg_bg_02.gif);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
