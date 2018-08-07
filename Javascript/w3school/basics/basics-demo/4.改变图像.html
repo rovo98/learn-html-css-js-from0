@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+    author : rovo98
+    date: 2018.8.7
+-->
+
+<html lang="en">
+    <head>
+        <title>JavaScript 改变 HTML 元素内容</title>
+        <meta charset="utf-8">
+        <style>
+            <!--
+            #wrap {
+                width : 500px;
+                height : 100%;
+                margin : 20px auto; 
+                padding : 10px 20px;
+                text-align : center;
+                border : 1px solid #ccc;
+                box-shadow : 0 5px 10px #666;
+                -webkit-box-shadow : 0 5px 10px #666;
+                -moz-box-shadow : 0 5px 10px #666;
+                -o-box-shadown : 0 5px 10px #666;
+            }
+            h1 { text-align : center; }
+            -->
+        </style>
+    </head>
+    <body>
+        <script>
+            <!--
+            function changeImage() {
+                x = document.getElementById("myimage");
+                if (x.src.match("bulbon")) {
+                    x.src = "images/eg_bulboff.gif";
+                } else {
+                    x.src = "images/eg_bulbon.gif";
+                }
+            }
+            -->
+        </script>
+
+        <h1>使用JavaScript 改变图像</h1>
+        
+        <div id="wrap">
+        <img id="myimage" onclick="changeImage()" src="eg_bulboff.gif">
+        <p>点击灯泡点亮或熄灭这盏灯</p>
+        </div>
+    </body>
+</html>
+
