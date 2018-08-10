@@ -12,6 +12,10 @@
     <title>First Jquery script</title>
     <script src="../jquery-3.3.1.js"></script>
     <script>
+        // $(function(){});            // 简写形式
+        /*
+        * 不同于原生javascript 的 onload 时间绑定， $(function(){}); 可以调用多个函数，
+        * 而onload 是能绑定最后一个函数*/
         $(document).ready(function(){ // 等待dom元素加载完全后
             alert("Hello, world!");   // 弹出一个框
         });
