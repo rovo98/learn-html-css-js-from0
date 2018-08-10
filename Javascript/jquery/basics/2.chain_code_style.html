@@ -54,8 +54,11 @@
     <script>
         $(function(){
             $(".has_children").click(function(){
-                $(this).addClass("highlight").children("a").show().end()
-                    .siblings().removeClass("highlight").children("a").hide();
+                $(this).addClass("highlight")          //为当前元素添加highlight 类
+                    .children("a").show().end()         // 将子节点的<a>元素显示出来
+                                                        // 重新定位到上次操作的元素
+                    .siblings().removeClass("highlight") // 获取元素的兄弟元素，并去掉highlight 类
+                    .children("a").hide();              // 将兄弟元素下的<a>元素隐藏
             });
         });
     </script>
