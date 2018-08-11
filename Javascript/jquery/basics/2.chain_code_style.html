@@ -30,14 +30,22 @@
         /* /styles containers*/
         .wrap h1 {text-align : center;}
         .highlight {
+            box-sizing : border-box;
             color : #fff;
             background : green;
+        }
+        .highlight span {
+            padding-top : 10px;
+            padding-bottom : 10px;
+            font-weight : bold;
+            font-family : "Times New Roman", Arial, sans-serif;
         }
         /*Styles links*/
         div.has_children a:link,
         div.has_children a:visited {
-            width : 400px;
+            width : 360px;
             float:left;
+            padding-left : 40px;
             text-decoration : none;
             background: #888;
             color : #323232;
@@ -55,10 +63,10 @@
         $(function(){
             $(".has_children").click(function(){
                 $(this).addClass("highlight")          //为当前元素添加highlight 类
-                    .children("a").show().end()         // 将子节点的<a>元素显示出来
+                    .children("a").slideDown(200).end()         // 将子节点的<a>元素显示出来
                                                         // 重新定位到上次操作的元素
                     .siblings().removeClass("highlight") // 获取元素的兄弟元素，并去掉highlight 类
-                    .children("a").hide();              // 将兄弟元素下的<a>元素隐藏
+                    .children("a").slideUp(200);              // 将兄弟元素下的<a>元素隐藏
             });
         });
     </script>
