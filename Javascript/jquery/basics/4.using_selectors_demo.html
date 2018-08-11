@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery Basics | Using selectors</title>
+    <style>
+        /*Styling containers */
+        * {
+            margin : 0;
+            padding: 0;
+        }
+        .wrap {
+            width : 1200px;
+            height : 700px;
+            margin : 20px auto;
+            background-color : rgba(200, 201, 202, 0.4);
+            box-shadow : 0 5px 10px #ccc;
+            -webkit-box-shadow : 0 5px 10px #ccc;
+            -moz-box-shadow : 0 5px 10px #ccc;
+        }
+        .info {
+            width : 100%;
+            margin-left : 285px;
+            height : auto;
+        }
+        .info .item {
+            width : 150px; /* 300px when display*/
+            height : auto;
+            float : left;
+        }
+        .info ul {
+            width : 100%;
+            height : auto;
+        }
+        /* /Styling containers */
+        .wrap h1 {
+            margin : 20px auto;
+            text-align : center;
+        }
+        /* info box styling*/
+        .info .item > span {
+            display : block;
+            text-align : center;
+            font-weight : bold;
+            font-size : 1.1em;
+            color : #fff;
+            background-color : #323232;
+        }
+        .info li {
+            display : none;
+            text-align: left;
+            background-color: rgba(32, 32, 32, 0.4);
+            list-style-type: none;
+        }
+        .item a:link,
+        .item a:visited {
+            display : block;
+            width : 100%;
+            text-decoration : none;
+            color : #fff;
+
+        }
+        .item ul a:hover,
+        .item ul a:active {
+            background: rgba(32, 32, 32, 0.5);
+        }
+         /* /info box styling*/
+         /* category box styling */
+        .sub-category-box li {
+            width : 120px;
+            height : 20px;
+            padding : 2px 1px;
+            margin-right : 100px;
+            margin-bottom : 15px;
+            float: left;
+            list-style-type : none;
+        }
+        .sub-category-box {
+            clear : both;
+            position: relative;
+            top: 40px;
+            width : 700px;
+            height : auto;
+            margin-left: auto;
+            margin-right: auto;
+            padding : 10px 5px;
+        }
+        .sub-category-box ul {
+            width : 100%;
+            height : 100%;
+            padding-left : 10px;
+            text-align : center;
+        }
+        .sub-category-box li>a:link,
+        .sub-category-box li>a:visited {
+            display : inline;
+            text-decoration : none;
+            color : #323232;
+            font-size : 1.1em;
+        }
+        .sub-category-box li>a:hover,
+        .sub-category-box li>a:active {
+            color : #255e95;
+        }
+        .show-more {
+            clear : both;
+            width : 150px;
+            height : 20px;
+            margin : 10px auto;
+            text-align : center;
+        }
+        .show-more a:link,
+        .show-more a:visited {
+            display : block;
+            padding : 2px 0.5em;
+            background : rgba(18, 12, 77, 0.61);
+            text-decoration : none;
+            font-weight : bold;
+            color : rgba(255, 255, 255, 0.5);
+        }
+        .show-more a:hover,
+        .show-more a:active {
+            color : rgba(255, 255, 255, 1);
+        }
+        .promoted {
+            color : brown;
+        }
+        /* /category box styling */
+    </style>
+    <script src="../jquery-3.3.1.js"></script>
+    <script>
+       <!--
+       $(function(){
+           var $category = $('.sub-category-box > ul li:gt(4):not(:last)');
+           var $text = $('.show-more>a>span');
+           var $info_item = $('.item');
+
+           $category.hide();
+           $('.show-more>a').click(function(){
+               // var span = $text[0];
+               if ($category.is(":visible")) {
+                   $category.hide(50);
+                   $text.text("显示所有品牌");
+               } else {
+                   $category.show(50);
+                   $text.text("精简显示品牌");
+               }
+           });
+
+           $('ul li').filter(":contains('佳能'), :contains('尼康'), :contains('明基')")
+               .addClass("promoted");
+
+
+           $info_item.mouseenter(function(){
+               $(this).css({"width": "200", "cursor":"pointer"})
+                   .find("li").slideDown(200);
+           });
+           $info_item.mouseleave(function() {
+               $(this).css({"width": "150", "cursor":"pointer"})
+                   .find("li").slideUp(200);
+           });
+       });
+       -->
+    </script>
+    <noscript>对不起，你的浏览器不支持JavaScript!</noscript>
+</head>
+<body>
+    <div class="wrap">
+        <h1>jQuery 选择器使用实例</h1>
+        <div class="info">
+            <div class="item">
+                <span>基本选择器</span>
+                <ul>
+                    <li><a href="#">#id - id 选择器</a> </li>
+                    <li><a href="#">.class - 类选择器</a></li>
+                    <li><a href="#">element - 元素名称选择器</a> </li>
+                    <li><a href="#">* - 全局选择器</a> </li>
+                    <li><a href="#">selector1, selector2, ..., selectorN - 分组选择器</a> </li>
+                </ul>
+            </div>
+            <div class="item">
+                <span>层次选择器</span>
+                <ul>
+                    <li><a href="#">$('ancestor descendant')</a> </li>
+                    <li><a href="#">$('parent > child')</a> </li>
+                    <li><a href="#">$('prev + next')</a> </li>
+                    <li><a href="#">$('prev ~ siblings')</a> </li>
+                </ul>
+            </div>
+            <div class="item">
+                <span>过滤选择器</span>
+                <ul>
+                    <li><a href="#">:first</a></li>
+                    <li><a href="#">:last</a></li>
+                    <li><a href="#">:not(selector)</a></li>
+                    <li><a href="#">:even</a> </li>
+                    <li><a href="#">:add</a></li>
+                    <li><a href="#">:eq(index)</a> </li>
+                    <li><a href="#">:gt(index)</a> </li>
+                    <li><a href="#">:lt(index)</a> </li>
+                </ul>
+            </div>
+        </div>
+    <div class="sub-category-box">
+        <ul>
+            <li><a href="#">佳能</a><i>(30440)</i></li>
+            <li><a href="#">索尼</a><i>(27220)</i></li>
+            <li><a href="#">三星</a><i>(27220)</i></li>
+            <li><a href="#">尼康</a><i>(20808)</i></li>
+            <li><a href="#">松下</a><i>(17821)</i></li>
+            <li><a href="#">卡西欧</a><i>(12289)</i></li>
+            <li><a href="#">富士</a><i>(8242)</i></li>
+            <li><a href="#">柯达</a><i>(14894)</i></li>
+            <li><a href="#">宾得</a><i>(9520)</i></li>
+            <li><a href="#">理光</a><i>(2195)</i></li>
+            <li><a href="#">奥林巴斯</a><i>(4114)</i></li>
+            <li><a href="#">明基</a><i>(12205)</i></li>
+            <li><a href="#">爱国者</a><i>(3091)</i></li>
+            <li><a href="#">其他品牌</a><i>(7725)</i></li>
+        </ul>
+        <div class="show-more">
+            <a href="#"><span>显示所有品牌</span></a>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
