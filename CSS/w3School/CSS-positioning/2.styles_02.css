@@ -1,0 +1,189 @@
+@charset "UTF-8";
+/*
+* author: rovo98
+* date : 2018/8/13
+*/
+/* styling containers */
+.wrap {
+    width: 1000px;
+    height: 100%;
+    margin: 20px auto;
+    padding: 15px 40px;
+    border: 1px solid rgb(133, 142, 134);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    -webkit-box-shadow: 0 5px 10px rgba(182, 180, 173, 0.99);
+    -moz-box-shadow: 0 5px 10px rgba(182, 180, 173, 0.99);
+    box-shadow: 0 5px 10px rgba(182, 180, 173, 0.99);
+}
+
+.definition-tbl {
+    width: 80%;
+    height: 100%;
+    margin: 10px auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.definition-tbl th {
+    font-weight: bold;
+    color: #fff;
+    background-color: #323232;
+}
+
+table.definition-tbl,
+.definition-tbl td {
+    border: 1px solid #ccc;
+}
+
+.definition-tbl td {
+    padding: 5px 10px;
+}
+
+.wrap h1 {
+    text-align: center;
+    margin: 30px auto;
+}
+
+.wrap h2 {
+    margin: 20px auto;
+}
+
+.wrap h3 {
+    margin: 10px auto;
+}
+
+/* test styling rules*/
+.float-ins {
+    position: relative;
+    width: 500px;
+    border: 1px solid #ccc;
+    -webkit-box-shadow: 0 5px 10px #666;
+    -moz-box-shadow: 0 5px 10px #666;
+    box-shadow: 0 5px 10px #666;
+}
+
+.float-ins-01 img {
+    float: right;
+}
+
+.float-ins-02 img {
+    float: right;
+    border: 1px dotted black;
+    margin: 0 0 15px 20px;
+}
+
+.float-ins-03 div {
+    float: right;
+    border: 1px solid #1019ff;
+    margin: 10px 10px 20px 30px;
+    padding: 5px;
+    text-align: center;
+}
+
+.float-ins-04 span {
+    float: left;
+    display: block;
+    width: 0.7em;
+    padding: 3px 10px;
+    font-size: 400%;
+    font-family: "Arial Narrow", "Courier New", sans-serif;
+    line-height: 80%;
+    color: #323232;
+}
+
+.float-ins-05 ul {
+    float: left;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.float-ins-05 li {
+    display: inline-block;
+}
+
+.float-ins-05 a:link,
+.float-ins-05 a:visited {
+    float: left;
+    width: 7em;
+    padding: 1px 2px;
+    text-decoration: none;
+    font-family: "Book Antiqua", cursive;
+    border: 1px solid #b289ff;
+    color: #fff;
+    background: rgba(114, 36, 249, 0.7);
+}
+
+.float-ins-05 a:hover {
+    background: rgba(218, 96, 30, 0.9);
+}
+
+.float-ins-06 {
+    width: 600px;
+}
+
+.float-ins-06 .header,
+.float-ins-06 .footer {
+    clear: both;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    margin: 0;
+    color: #fff;
+    background-clip: border-box;
+    background: linear-gradient(to bottom right, #eab554 0%, #da601e 100%);
+}
+
+.float-ins-06 .left {
+    float: left;
+    width: 160px;
+    margin: 0;
+    padding: 1em;
+}
+
+.float-ins-06 .content {
+    margin-left: 165px;
+    border-left: 1px solid grey;
+    padding: 1em;
+}
+
+.nav-align {
+    height: 100px;
+}
+
+.nav-align ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    list-style-type: none;
+    background: linear-gradient(to bottom right, #c9cacb 0%, #a4a0b9 100%);
+}
+
+.nav-align li {
+    display: inline;
+}
+
+.nav-align a:link,
+.nav-align a:visited {
+    float: left;
+    display: block;
+    padding: 5px 10px;
+    border-bottom: 1px solid rgba(195, 20, 15, 0.96);
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: Consolas, monospace;
+    color: #fff;
+    text-align: center;
+    background-color: rgba(201, 202, 203, 0.85);
+}
+
+.nav-align a:hover {
+    background-color: #ff232d;
+}
+
+/* /test styling rules*/
