@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<!--
+    author : rovo98
+    date: 2018.8.12
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Positioning</title>
+    <link rel="stylesheet" href="1.styles_01.css"/>
+</head>
+<body>
+    <div class="wrap">
+        <h1>CSS 定位 : display 属性</h1>
+        <h3><b>display</b>属性规定元素应该生成的框的类型.</h3>
+        <h3>说明</h3>
+        <p>这个属性用于定义建立布局时元素生成的显示框类型。
+        对于 HTML 等文档类型，如果使用 display 不谨慎会很危险，因为
+        可能会违反 HTML 中已经定义的显示层次结构。对于 XML
+        ，由于 XMl 没有内置的这种层次结构，所有display是绝对必要的。<br>
+        <b>注释:</b>CSS2 中有值 compact 和 marker， 不过由于缺乏广泛的支持，已经从CSS2.1
+        中去除了。</p>
+        <table class="definition-tbl">
+            <tr>
+                <th>默认值:</th>
+                <td>inline</td>
+            </tr>
+            <tr>
+                <th>继承性:</th>
+                <td>no</td>
+            </tr>
+            <tr>
+                <th>版本:</th>
+                <td>CSS1</td>
+            </tr>
+            <tr>
+                <th>JavaScript语法:</th>
+                <td>object.style.display = "inline"</td>
+            </tr>
+        </table>
+        <h3>可能的值</h3>
+        <table class="definition-tbl">
+            <tr>
+                <th>值</th>
+                <th>描述</th>
+            </tr>
+            <tr>
+                <td>none</td>
+                <td>此元素不会被显示</td>
+            </tr>
+            <tr>
+                <td>block</td>
+                <td>此元素将显示为块级元素，此元素前后带有换行符。</td>
+            </tr>
+            <tr>
+                <td>inline</td>
+                <td>默认。此元素会别显示为内联元素，元素前后没有换行符。</td>
+            </tr>
+            <tr>
+                <td>inline-block</td>
+                <td>行内块元素。(CSS 2.1 新增的值)</td>
+            </tr>
+            <tr>
+                <td>list-item</td>
+                <td>此元素会作为列表显示。</td>
+            </tr>
+            <tr>
+                <td>run-in</td>
+                <td>此元素会根据上下文作为块级元素或内联元素显示。</td>
+            </tr>
+            <tr>
+                <td>compact</td>
+                <td>css 中有值 compact, 不过由于缺乏广泛支持，已经从 css2.1中删除。</td>
+            </tr>
+            <tr>
+                <td>marker</td>
+                <td>css 中有值 marker, 不过由于缺乏广泛支持，已经从 css2.1中删除。</td>
+            </tr>
+            <tr>
+                <td>table</td>
+                <td>此元素会作为块级表格来显示(类似&lt;table&gt;)，表格前后带有换行符。</td>
+            </tr>
+            <tr>
+                <td>inline-table</td>
+                <td>此元素会作为内联表格来显示(类似&lt;table&gt;)，表格前后没有换行符。</td>
+            </tr>
+            <tr>
+                <td>table-row-group</td>
+                <td>此元素会作为一个或多个行的分组来显示。(类似 &lt;tbody&gt;)。</td>
+            </tr>
+            <tr>
+                <td>table-header-group</td>
+                <td>此元素会作为一个或多个行的分组来显示。(类似 &lt;thead&gt;)。</td>
+            </tr>
+            <tr>
+                <td>table-footer-group</td>
+                <td>此元素会作为一个或多个行的分组来显示。(类似 &lt;tfooter&gt;)。</td>
+            </tr>
+            <tr>
+                <td>table-row</td>
+                <td>此元素会作为一个表格行显示(类似&lt;tr&gt;)。</td>
+            </tr>
+            <tr>
+                <td>table-column-group</td>
+                <td>此元素会作为一个或多个行的分组来显示。(类似 &lt;colgroup&gt;)。</td>
+            </tr>
+            <tr>
+                <td>table-column</td>
+                <td>此元素会作为一个表格行显示(类似&lt;col&gt;)。</td>
+            </tr>
+            <tr>
+                <td>table-cell</td>
+                <td>此元素会作为一个表格单元格来显示(类似&lt;td&gt;和&lt;th&gt;)</td>
+            </tr>
+            <tr>
+                <td>table-caption</td>
+                <td>次元素会作为一个表格标题显示(类似&lt;caption&gt;)</td>
+            </tr>
+            <tr>
+                <td>inherit</td>
+                <td>规定应该从父元素继承 display 属性的值。</td>
+            </tr>
+        </table>
+        <h3>实例</h3>
+
+        <div class="test-display">
+            <p>本例中的样式表把堕落设置为内联元素。</p>
+
+            <p>而 div 元素不会显示出来！</p>
+            <div>div 元素不会显示出来！</div>
+        </div>
+        <h1>CSS 定位 : position 属性</h1>
+        <h3>定义和用法</h3>
+        <p><b>position</b> 属性规定元素的定位类型。</p>
+        <h3>说明</h3>
+        <p>这个属性定义建立元素布局所用的定位机制。任何元素都可以定位，不过绝对或固定
+        元素会生成一个块级框，而不论该元素是什么类型。相对定位会相对于它在正常流中的
+        默认位置偏移。</p>
+        <table class="definition-tbl">
+            <tr>
+                <th>默认值:</th>
+                <td>static</td>
+            </tr>
+            <tr>
+                <th>继承性:</th>
+                <td>no</td>
+            </tr>
+            <tr>
+                <th>版本:</th>
+                <td>CSS2</td>
+            </tr>
+            <tr>
+                <th>JavaScript语法:</th>
+                <td>object.style.position = "absolute"</td>
+            </tr>
+        </table>
+        <h3>可能的值</h3>
+        <table class="definition-tbl">
+            <tr>
+                <th>值</th>
+                <th>描述</th>
+            </tr>
+            <tr>
+                <td>absolute</td>
+                <td>生成绝对定位的元素，相对于static定位以外的第一个父元素
+                进行定位。元素的位置可通过 "left", "top", "right" 以及
+                "bottom" 属性进行规定。</td>
+            </tr>
+            <tr>
+                <td>fixed</td>
+                <td>生成绝对定位的元素，相对于浏览器窗口进行定位。<br>
+                元素的位置可以通过 "left", "top", "right" 以及 "bottom" 属性
+                进行规定。</td>
+            </tr>
+            <tr>
+                <td>static</td>
+                <td>默认值。没有定位，元素出现在正常的流中(忽略top, bottom, left, right
+                    或者z-index 声明)。</td>
+            </tr>
+            <tr>
+                <td>inherit</td>
+                <td>规定元素应该从父元素继承 position 属性值。</td>
+            </tr>
+        </table>
+        <h3>相对定位实例</h3>
+        <div class="relative-positioning">
+            <h2>这是位于正常位置的标题</h2>
+            <h2 class="pos_left">这个标题相对于正常位置向左移动。</h2>
+            <h2 class="pos_right">这个标题相对于正常位置向右移动。</h2>
+            <p>相对定位会按照元素的原始位置对该元素进行移动。<br><br>
+            样式："left:-20px" 从元素的原始位置左侧位置减去 20 像素。<br><br>
+            样式："left: 20px" 从元素的原始位置左侧位置增加 20 像素。</p>
+        </div>
+
+        <h3>绝对定位实例</h3>
+        <div class="absolute-positioning">
+            <div class="relative-box">
+                <h2 class="pos_abs">这是一个带有绝对定位的标题</h2>
+                <p>通过绝对定位，元素可以放置到页面上的任何位置。下面的标题
+                距离该 div 左侧 100px, 距离顶部 150px.</p>
+            </div>
+        </div>
+        <h3>固定定位实例</h3>
+        <div class="fixed-positioning">
+            <p>屏幕右下位置 - 可以看到一个相对于浏览器绝对定位的固定 box</p>
+            <div class="fixed-box">
+                <p class="one">固定定位 box</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

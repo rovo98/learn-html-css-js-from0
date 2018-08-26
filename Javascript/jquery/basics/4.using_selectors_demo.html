@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery Basics | Using selectors</title>
+    <!-- import the custom stylesheet file -->
+    <link rel="stylesheet" href="4.styles.css">
+    <!-- import jquery -->
+    <script src="../jquery-3.3.1.js"></script>
+    <script>
+       <!--
+       $(function(){
+           var $category = $('.sub-category-box > ul li:gt(4):not(:last)');
+           var $text = $('.show-more > a > span');
+           var $info_item = $('.item');
+
+           $category.hide();
+           $('.show-more>a').click(function(){
+               // var span = $text[0];
+               if ($category.is(":visible")) {
+                   $category.hide(50);
+                   $text.text("显示所有品牌");
+               } else {
+                   $category.show(50);
+                   $text.text("精简显示品牌");
+               }
+           });
+
+           $('ul li').filter(":contains('佳能'), :contains('尼康'), :contains('明基')")
+               .addClass("promoted");
+
+
+           $info_item.mouseenter(function(){
+               $(this).css({"width": "200", "cursor":"pointer"})
+                   .find("li").slideDown(200);
+           });
+           $info_item.mouseleave(function() {
+               $(this).css({"width": "150", "cursor":"pointer"})
+                   .find("li").slideUp(200);
+           });
+       });
+       -->
+    </script>
+    <noscript>对不起，你的浏览器不支持JavaScript!</noscript>
+</head>
+<body>
+    <div class="wrap">
+        <h1>jQuery 选择器使用实例</h1>
+        <div class="info">
+            <div class="item">
+                <span>基本选择器</span>
+                <ul>
+                    <li><a href="#">#id - id 选择器</a> </li>
+                    <li><a href="#">.class - 类选择器</a></li>
+                    <li><a href="#">element - 元素名称选择器</a> </li>
+                    <li><a href="#">* - 全局选择器</a> </li>
+                    <li><a href="#">selector1, selector2, ..., selectorN - 分组选择器</a> </li>
+                </ul>
+            </div>
+            <div class="item">
+                <span>层次选择器</span>
+                <ul>
+                    <li><a href="#">$('ancestor descendant')</a> </li>
+                    <li><a href="#">$('parent > child')</a> </li>
+                    <li><a href="#">$('prev + next')</a> </li>
+                    <li><a href="#">$('prev ~ siblings')</a> </li>
+                </ul>
+            </div>
+            <div class="item">
+                <span>过滤选择器</span>
+                <ul>
+                    <li><a href="#">:first</a></li>
+                    <li><a href="#">:last</a></li>
+                    <li><a href="#">:not(selector)</a></li>
+                    <li><a href="#">:even</a> </li>
+                    <li><a href="#">:add</a></li>
+                    <li><a href="#">:eq(index)</a> </li>
+                    <li><a href="#">:gt(index)</a> </li>
+                    <li><a href="#">:lt(index)</a> </li>
+                </ul>
+            </div>
+            <div class="item">
+                <span>表单选择器</span>
+                <ul>
+                    <li><a href="#">:input</a> </li>
+                    <li><a href="#">:text</a></li>
+                    <li><a href="#">:radio</a> </li>
+                    <li><a href="#">password</a> </li>
+                    <li><a href="#">:checkbox</a> </li>
+                    <li><a href="#">:submit</a> </li>
+                    <li><a href="#">:image</a> </li>
+                    <li><a href="#">:button</a> </li>
+                    <li><a href="#">:reset</a> </li>
+                    <li><a href="#">:file</a> </li>
+                    <li><a href="#">:hidden</a> </li>
+                </ul>
+            </div>
+        </div>
+    <div class="sub-category-box">
+        <ul>
+            <li><a href="#">佳能</a><i>(30440)</i></li>
+            <li><a href="#">索尼</a><i>(27220)</i></li>
+            <li><a href="#">三星</a><i>(27220)</i></li>
+            <li><a href="#">尼康</a><i>(20808)</i></li>
+            <li><a href="#">松下</a><i>(17821)</i></li>
+            <li><a href="#">卡西欧</a><i>(12289)</i></li>
+            <li><a href="#">富士</a><i>(8242)</i></li>
+            <li><a href="#">柯达</a><i>(14894)</i></li>
+            <li><a href="#">宾得</a><i>(9520)</i></li>
+            <li><a href="#">理光</a><i>(2195)</i></li>
+            <li><a href="#">奥林巴斯</a><i>(4114)</i></li>
+            <li><a href="#">明基</a><i>(12205)</i></li>
+            <li><a href="#">爱国者</a><i>(3091)</i></li>
+            <li><a href="#">其他品牌</a><i>(7725)</i></li>
+        </ul>
+        <div class="show-more">
+            <a href="#"><span>显示所有品牌</span></a>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
