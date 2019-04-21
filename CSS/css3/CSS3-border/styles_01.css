@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 /*
 * author: rovo98
 * date : 2018/8/13
@@ -55,52 +56,58 @@ table.definition-tbl,
 /* test styling rules*/
 .border-radius-ins {
     float: left;
-    width : 200px;
-    height : 150px;
-    margin-left : 10px;
-    padding : 10px 15px;
-    border : 2px solid #ccc;
-    border-radius : 25px;
-    vertical-align : center;
-    background : linear-gradient(to top left, #a3c26b 0%, #9cff4d 100%);
+    width: 200px;
+    height: 150px;
+    margin-left: 10px;
+    padding: 10px 15px;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    vertical-align: center;
+    background: linear-gradient(to top left, #a3c26b 0%, #9cff4d 100%);
 }
+
 .border-radius-ins1 {
-    display : inline-block;
-    width : 200px;
+    display: inline-block;
+    width: 200px;
     height: 200px;
-    margin-left : 50px;
+    margin-left: 50px;
     vertical-align: middle;
-    border-radius : 50%;
-    background-color : rgba(201, 202, 203, 0.7);
+    border-radius: 50%;
+    background-color: rgba(201, 202, 203, 0.7);
 }
+
 .border-radius-ins1 span {
-    display : block;
-    margin-top : 85px;
-    margin-left : 50px;
-    font-weight : bold;
-    font-size : 1.4em;
+    display: block;
+    margin-top: 85px;
+    margin-left: 50px;
+    font-weight: bold;
+    font-size: 1.4em;
     font-family: Consolas, sans-serif;
-    color : #858e86;
+    color: #858e86;
 }
+
 .clear-float {
-    clear : both;
+    clear: both;
 }
+
 .box-shadow-ins {
-    width : 200px;
+    width: 200px;
     height: 150px;
     background: linear-gradient(to top right, #ffa048 0%, #ffb615 100%);
     -webkit-box-shadow: 10px 10px 5px #666;
-    -moz-box-shadow: 10px 10px 5px  #666;
+    -moz-box-shadow: 10px 10px 5px #666;
     box-shadow: 10px 10px 5px #666;
 }
+
 .border-image-ins {
-    border : transparent;
-    width : 200px;
-    height : 100px;
-    padding : 10px 20px;
+    border: transparent;
+    width: 200px;
+    height: 100px;
+    padding: 10px 20px;
     -webkit-border-image: url(border.png) 30 30 round;
     -moz-border-image: url(border.png) 30 30 round;
     -o-border-image: url(border.png) 30 30 round;
     border-image: url(border.png) 30 30 stretch;
 }
+
 /* /test styling rules*/

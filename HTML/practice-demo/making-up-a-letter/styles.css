@@ -6,31 +6,51 @@
  * */
 
 body {
-    background-color : #ccc;
+    background-color: #ccc;
 }
 
 #container {
-    max-width : 700px;
-    margin : 80px auto;
-    border : 1px solid #eee;
-    padding : 20px 50px;
-    background-color : #fff;
+    max-width: 700px;
+    margin: 80px auto;
+    border: 1px solid #eee;
+    padding: 20px 50px;
+    background-color: #fff;
     -webkit-box-shadow: 0 5px 10px #333;
     -moz-box-shadow: 0 5px 10px #333;
     box-shadow: 0 5px 10px #333;
 }
+
 .sender-column {
-    text-align : right;
+    text-align: right;
 }
 
-p, li,dt,dd { font-family : "Times New Roman", Arial, sans-serif; }
+p,
+li,
+dt,
+dd {
+    font-family: "Times New Roman", Arial, sans-serif;
+}
 
-#nav p.fp { margin-bottom : 10px; }
+#nav p.fp {
+    margin-bottom: 10px;
+}
 
-#footer { margin-top : 60px;}
+#footer {
+    margin-top: 60px;
+}
 
-h1 { font-size : 1.5em; }
+h1 {
+    font-size: 1.5em;
+}
 
-h2 { font-size : 1.3em; }
+h2 {
+    font-size: 1.3em;
+}
 
-p, li, dd, dt, address { line-height : 1.5; }
+p,
+li,
+dd,
+dt,
+address {
+    line-height: 1.5;
+}
