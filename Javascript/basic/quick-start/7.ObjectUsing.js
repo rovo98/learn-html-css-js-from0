@@ -1,7 +1,7 @@
 'use strict'
 
 // simple object using demo
-var obj = {}
+let obj = {}
 
 obj.name = 'rovo98'
 obj.age = 22
@@ -20,5 +20,5 @@ function User (name, age) {
   }
 }
 
-var user = new User('testUser', 21)
+let user = new User('testUser', 21)
 user.printMsg()

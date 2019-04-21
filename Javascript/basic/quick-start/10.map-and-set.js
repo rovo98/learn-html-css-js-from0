@@ -4,8 +4,8 @@
 // JavaScript中的对象的键必须是字符串 {} ， 而实际上Number 或者其他类型也是可以的
 
 // 测试是否支持Map 和 Set
-var m = new Map()
-var s = new Set()
+let m = new Map()
+let s = new Set()
 console.log('你的浏览器支持Map和Set')
 
 // Map 的使用

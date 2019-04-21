@@ -1,12 +1,12 @@
 'use strict'
 
-var height = parseFloat(prompt('请输入您的身高(m):'))
-var weight = parseFloat(prompt('请输入您的体重(kg):'))
+let height = parseFloat(prompt('请输入您的身高(m):'))
+let weight = parseFloat(prompt('请输入您的体重(kg):'))
 
 // console.log(height)
 // console.log(weight)
 
-var bmi = weight / (height * height)
+let bmi = weight / (height * height)
 
 if (bmi < 18.5) {
   console.log('过轻')
