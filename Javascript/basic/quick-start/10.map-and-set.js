@@ -1,6 +1,7 @@
 'use strict'
 
 // Map 和 Set 是ES6引入的新特性
+// JavaScript中的对象的键必须是字符串 {} ， 而实际上Number 或者其他类型也是可以的
 
 // 测试是否支持Map 和 Set
 var m = new Map()
