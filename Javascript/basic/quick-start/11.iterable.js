@@ -62,3 +62,22 @@ testArr2.forEach((element, index, array) => {
   // array: 指向Array 对象本身
   console.log(element + ', index = ' + index)
 })
+
+// forEach 方式是ES5.1 标准引入的，所以必须测试浏览器是否支持该方法
+//
+//
+let testSet = new Set(['A', 'B', 'C'])
+testSet.forEach((element, sameElement, set) => {
+  console.log(element)
+})
+
+let testMap = new Map([[1, 'x'], [2, 'y'], [3, 'z']])
+testMap.forEach((value, key, map) => {
+  console.log(value)
+})
+
+// JavaScript的函数调用不要求参数必须一致，因此可以忽略某些参数
+let testArr3 = ['A', 'B', 'C']
+testArr3.forEach((element) => {
+  console.log(element)
+})
