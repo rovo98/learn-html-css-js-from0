@@ -70,3 +70,58 @@ if (normalize(['adam', 'LISA', 'barT']).toString() === ['Adam', 'Lisa', 'Bart'].
 } else {
   console.log('normalize 测试失败')
 }
+
+// filter 函数： 用于将Array 中共的某些元素过滤掉，然后返回剩下的元素
+
+// 例如在一个Array 中，删掉偶数，只保留奇数，可以这么写
+let testArr1 = [1, 2, 3, 4, 5, 6, 9, 10, 15]
+let r = testArr1.filter((x) => { return x % 2 !== 0 })
+console.log('odd numbers in testArr1: ' + r) // [1, 3, 5, 9, 15]
+// 把一个Array中的空字符串删掉，可以这么写
+let testArr2 = ['A', '', 'B', null, undefined, 'C', '    ']
+let r1 = testArr2.filter((s) => { return s && s.trim() })
+console.log('not empty string in testArr2: ' + r1) // 'A', 'B', 'C'
+
+// 关于filter 的回调函数: 它可以接受多个参数
+let testArr3 = ['A', 'B', 'C']
+let r2 = testArr3.filter((element, index, self) => {
+  console.log(element) // 依次打印 'A', 'B', 'C'
+  console.log(index) // 依次打印 0, 1, 2
+  console.log(self) // self 就是 testArr3
+  return true
+})
+console.log('testArr3 : ' + r2)
+// 利用filter 可以巧妙的去除Array 的重复元素
+let result2,
+  testArr4 = ['apple', 'strawberry', 'banana', 'pear', 'apple', 'orange', 'orange', 'strawberry']
+result2 = testArr4.filter((element, index, self) => {
+  return self.indexOf(element) === index
+})
+console.log('duplicate elements removed: ' + result2)
+
+// sort函数：它默认将所有元素先转换成String再进行排序，所以直接使用的话会出现无法理解的结果
+// 例如：
+let testArr5 = [10, 20, 1, 2]
+console.log(testArr5.sort()) // [1, 10, 2, 20]
+// 幸好sort() 也是一个高阶函数，我们可以这么写
+console.log(testArr5.sort((x, y) => { return x - y })) // 顺序排序
+console.log(testArr5.sort((x, y) => { return y - x })) // 倒序排序
+
+// 默认情况下，对字符串的排序是以ASCII码的大小进行比较的，我们一般是忽略大小写，按照字母序排序
+let testArr6 = ['Google', 'apple', 'Microsoft']
+console.log(testArr6.sort((s1, s2) => {
+  let x1 = s1.toUpperCase()
+  let x2 = s2.toUpperCase()
+  if (x1 < x2) {
+    return -1
+  } else if (x1 > x2) {
+    return 1
+  } else {
+    return 0
+  }
+})) // 'apple', 'Google', 'Microsoft'
+
+// sort 会直接对Array 进行修改，它的返回结果仍是当前的Array
+let a1 = ['B', 'A', 'C']
+let a2 = a1.sort()
+console.log(a1 === a2) // true
