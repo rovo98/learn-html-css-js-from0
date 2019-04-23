@@ -80,7 +80,7 @@ console.log(f3())
 function createCounter (initial) {
   let x = initial || 0
   return {
-    inc: function () {
+    inc: () => {
       x += 1
       return x
     }
